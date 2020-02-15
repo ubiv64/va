@@ -1,0 +1,12 @@
+{
+  "short_name": "proto",
+  "name": "proto",
+  "icons": [
+    {
+       "src": "",
+       "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
