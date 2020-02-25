@@ -6,6 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
+import RecentsTile from './Recents.js'
+
 export default function Menu() {
   return (
     <Router>
@@ -64,5 +66,10 @@ function Feed() {
 }
 
 function Recents() {
-  return <h2>recents</h2>;
+  return (
+  	<div>
+  		<h2>recents</h2>
+  		<RecentsTile />
+  	</div>
+  );
 }
