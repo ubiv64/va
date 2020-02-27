@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 
-import RecentsTile from './Recents.js'
+import RecentsGrid from './RecentsGrid.js'
 
 export default function Menu() {
   return (
@@ -69,7 +69,7 @@ function Recents() {
   return (
   	<div>
   		<h2>recents</h2>
-  		<RecentsTile />
+  		<RecentsGrid />
   	</div>
   );
 }
