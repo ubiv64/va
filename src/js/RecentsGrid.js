@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/RecentsGrid.css'
 
 class RecentsGrid extends Component {
 	constructor(props) {
@@ -8,10 +9,16 @@ class RecentsGrid extends Component {
 
 	render () {
 		return(
-			<div>
-				<img className="imageList" src="https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg" />
-				<img className="imageList" src="https://vibu-a.s3.us-east-2.amazonaws.com/2.jpg" />
-				<img className="imageList" src="https://vibu-a.s3.us-east-2.amazonaws.com/110.jpg" />
+			<div class="container">
+				<figure class="item-a">
+					<img src="https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg" />
+				</figure>
+				<figure class="item-b">
+					<img src="https://vibu-a.s3.us-east-2.amazonaws.com/2.jpg" />
+				</figure>
+				<figure class="item-c">
+					<img src="https://vibu-a.s3.us-east-2.amazonaws.com/3.jpg" />
+				</figure>
 			</div>
 		);
 	}

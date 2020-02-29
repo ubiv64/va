@@ -1,0 +1,33 @@
+img {
+	max-width: 125px;
+	max-height: 125px;
+}
+
+.item-a {
+	grid-area: item-a;
+	align-self: stretch;
+}
+
+.item-b {
+	grid-area: item-b;
+	align-self: stretch;
+}
+
+.item-c {
+	grid-area: item-c;
+	align-self: stretch;
+}
+
+.container {
+	display: grid | inline-grid;
+	justify-content: center;
+	align-content: center;
+
+	grid-template-columns: 125px 125px 125px;
+	grid-template-rows: 125px 125px 125px;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+
+	grid-template-areas: 
+		"item-a item-b item-c";
+}
