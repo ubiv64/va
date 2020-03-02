@@ -1,6 +1,6 @@
+import React, { Component } from 'react';
 import Menu from './Menu';
 
-import React, { Component } from 'react';
 import '../styles/Main.css';
 
 class Main extends Component {
