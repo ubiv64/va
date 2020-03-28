@@ -21,10 +21,8 @@ class RecentsGrid extends Component {
 		  }
 		);
 
-		console.log(image)
-
 		return (
-			<div></div>
+			<img src="https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg" />
 		);
 	}
 }
