@@ -12,7 +12,7 @@ class RecentsGrid extends Component {
 		const image = loadImage(
 			'https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg', 
 			(canvas) => {
-				document.body.appendChild(canvas)
+				console.log(canvas)
 			},
 		  { 
 		  	orientation: 6,
@@ -21,8 +21,10 @@ class RecentsGrid extends Component {
 		  }
 		);
 
+		console.log(image)
+
 		return (
-			<img src="https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg" />
+			<div dangerouslySetInnerHTML={{__html: image}} />
 		);
 	}
 }
