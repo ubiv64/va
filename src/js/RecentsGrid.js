@@ -12,12 +12,12 @@ class RecentsGrid extends Component {
 		const image = loadImage(
 			'https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg', 
 			(canvas) => {
-				console.log(canvas)
+				document.body.appendChild(canvas)
 			},
 		  { 
 		  	orientation: 6,
-
-		  	corsOrigin: 'anonymous'
+		  	corsOrigin: 'anonymous',
+		  	canvas: false
 		  }
 		);
 
