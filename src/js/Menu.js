@@ -16,9 +16,6 @@ export default function Menu() {
               <Link to="/work">work</Link>
             </li>
             <li>
-              <Link to="/feed">feed</Link>
-            </li>
-            <li>
               <Link to="/contact">contact</Link>
             </li>
           </ul>
@@ -31,11 +28,9 @@ export default function Menu() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/feed">
-            <Feed />
-          </Route>
           <Route path="/">
             <Recents />
+
           </Route>
         </Switch>
       </div>
@@ -56,15 +51,11 @@ function Contact() {
   return <h2>contact</h2>
 }
 
-function Feed() {
-  return <h2>feed</h2>;
-}
-
 function Recents() {
   return (
   	<div>
-  		<h2>recents</h2>
-  		<RecentsGrid />
+  		<h2 className="recents">recents</h2>
+      <RecentsGrid />
   	</div>
   );
 }
