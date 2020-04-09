@@ -1,21 +1,18 @@
-img {
-	position: absolute;
-	top: -350px;
-	left: -1720px;
-	transform: scale(.1);
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
 
+.container canvas, #overlay {
+  position: absolute;
 }
 
 canvas {
-	position: absolute;
-	top: -1520px;
-	left: -960px;
-	transform: scale(.10);
-
+  image-rendering: crisp-edges;
 }
 
-
-/* grid layout
+/* grid layout */
 
 .item-a {
 	grid-area: item-a;
@@ -42,5 +39,3 @@ canvas {
 	grid-template-areas: 
 		"item-a item-b item-c";
 }
-
-*/

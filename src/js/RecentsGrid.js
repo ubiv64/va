@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import * as loadImage from 'blueimp-load-image';
 
 import '../styles/RecentsGrid.css';
 
@@ -9,22 +8,9 @@ class RecentsGrid extends Component {
 	}
 
 	render () {
-		const image = loadImage(
-			'https://vibu-a.s3.us-east-2.amazonaws.com/1.jpg', 
-			(canvas) => {
-				document.body.appendChild(canvas)
-			},
-		  { 
-		  	orientation: 6,
-		  	corsOrigin: 'anonymous',
-		  	canvas: false
-		  }
-		);
-
-		console.log(image)
 
 		return (
-			<div dangerouslySetInnerHTML={{__html: image}} />
+			<img src="https://vibu-a.s3.us-east-2.amazonaws.com/86.jpg"/>
 		);
 	}
 }

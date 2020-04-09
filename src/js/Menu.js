@@ -30,7 +30,6 @@ export default function Menu() {
           </Route>
           <Route path="/">
             <Recents />
-
           </Route>
         </Switch>
       </div>
@@ -52,10 +51,13 @@ function Contact() {
 }
 
 function Recents() {
+  //pass images from Main as part of Menu's props
+  let images = ['https://vibu-a.s3.us-east-2.amazonaws.com/86.jpg']
+
   return (
-  	<div>
-  		<h2 className="recents">recents</h2>
-      <RecentsGrid />
+  	<div className="recentsGrid">
+  		<h2>recents</h2>
+      <RecentsGrid images={images}/>
   	</div>
   );
 }
