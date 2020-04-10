@@ -52,12 +52,9 @@ function Contact() {
 
 function Recents() {
   //pass images from Main as part of Menu's props
-  let images = ['https://vibu-a.s3.us-east-2.amazonaws.com/86.jpg']
 
   return (
-  	<div className="recentsGrid">
-  		<h2>recents</h2>
-      <RecentsGrid images={images}/>
-  	</div>
+  		<h2>recents</h2>,
+      <RecentsGrid />
   );
 }
