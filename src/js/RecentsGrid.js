@@ -7,7 +7,7 @@ class RecentsGrid extends Component {
 		super(props);
 	}
 
-	// createGrid(images, onClick) {
+	// createGrid(images, handleClick) {
 		// 	images.map()
 	// }
 
@@ -28,6 +28,12 @@ class RecentsGrid extends Component {
 				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/21.jpg"/>
 				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/30.jpg"/>
 				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/5.jpg"/>
+				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/23.jpg"/>
+				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/33.jpg"/>
+				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/8.jpg"/>
+				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/100.jpg"/>
+				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/95.jpg"/>
+				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/66.jpg"/>
 			</div>
 		);
 	}

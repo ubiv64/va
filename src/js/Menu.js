@@ -1,60 +1,37 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 
 import RecentsGrid from './RecentsGrid.js'
 
-export default function Menu() {
-  return (
-    <Router>
-      <div className="menu">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">recents</Link>
-            </li>
-            <li>
-              <Link to="/work">work</Link>
-            </li>
-            <li>
-              <Link to="/contact">contact</Link>
-            </li>
-          </ul>
-        </nav>
+import '../styles/Menu.css'
 
-        <Switch>
-          <Route path="/work">
-            <Work />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Recents />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+class Menu extends Component {
+  constructor(props){
+    super(props)
+  }
+
+  render() {
+
+    return (
+      <Router>
+          <div className="nav">
+          <NavLink exact to="/" activeClassName="active" className="inactive">recents</NavLink>
+          <NavLink to="/work" activeClassName="active" className="inactive">work</NavLink>
+          <NavLink to="/contact" activeClassName="active" className="inactive">contact</NavLink>
+          </div>
+          <Switch>
+            <Route exact path="/">
+              <RecentsGrid />
+            </Route>
+          </Switch>
+      </Router>
+    );
+  }
 }
 
-function Work() {
-  return (
-  	<div>
-  	<h2>work</h2>
-  	<h3>vibu anbarasan</h3>
-  	</div>
-  );
-}
+export default Menu
 
-function Contact() {
-  return <h2>contact</h2>
-}
-
-function Recents() {
-  //pass images from Main as part of Menu's props
-
-  return (
-  		<h2>recents</h2>,
-      <RecentsGrid />
-  );
-}
+// <Route path="/work">
+// </Route>
+// <Route path="/contact">
+// </Route>

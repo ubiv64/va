@@ -1,40 +1,10 @@
 html {
   background-color: black;
 
-  font-family: "Arial", 
+  font-family: "Arial Bold", 
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   text-rendering: optimizeLegibility;
-}
-
-.header {
-  height: 60px;
-  vertical-align: bottom;
-
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #8B8888;
-  -webkit-text-stroke-width: 1px;
-  align-items: left;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: calc(16px + 2vmin);
-  color: black;
-
-  display: block;
-  flex-direction: column;
-}
-
-.body {
-  vertical-align: bottom;
-
-  align-items: left;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: calc(12px + 2vmin);
-  color: #FDA691;
-
-  display: block;
-  flex-direction: column;
 }

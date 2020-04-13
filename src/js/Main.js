@@ -7,7 +7,7 @@ import '../styles/Main.css';
 class Main extends Component {
   render() {
 
-    //generate RecentsGrid here and pass it as a constant to menu item so it doesn't regenerate
+    //generate random numbers and pass it to menu
 
     return (
       <div>

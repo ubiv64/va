@@ -6,8 +6,8 @@
 		img {
 			object-fit: cover;
 
-			width: 180px;
-			height: 180px;
+			width: 178px;
+			height: 178px;
 
 			border: 1px solid black;
 		}
@@ -53,8 +53,8 @@
   	img {
 			object-fit: cover;
 
-			width: 125px;
-			height: 125px;
+			width: 123px;
+			height: 123px;
 
 			border: 1px solid black;
 		}
@@ -73,8 +73,6 @@
 
 		.container {
 			display: grid;
-
-			position: flex;
 
 			height: 375px;
 			width: 375px;
