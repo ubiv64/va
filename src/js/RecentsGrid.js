@@ -3,6 +3,17 @@ import React, { Component } from 'react';
 import '../styles/RecentsGrid.css';
 
 class RecentsGrid extends Component {
+	constructor(props) {
+		super(props);
+	}
+
+	// createGrid(images, onClick) {
+		// 	images.map()
+	// }
+
+	// handClick = () => {
+		//pop-up modal with img.src array as props
+	// }
 
 	render () {
 

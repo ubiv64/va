@@ -1,32 +1,94 @@
 img {
 	object-fit: cover;
+
 	width: 180px;
 	height: 180px;
+
+	border: 1px solid black;
 }
 
-/* grid layout */
+/* grid layout for all screens */
 
-.item-a {
-	grid-area: a;
+/* laptops, monitors */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 8000px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.item-a {
+			grid-area: a;
+		}
+
+		.item-b {
+			grid-area: b;
+		}
+
+		.item-c {
+			grid-area: c;
+		}
+
+		.container {
+			display: grid;
+
+			position: absolute;
+		  top: 25%;
+		  left: 50%;
+
+		  transform: translate(-50%);
+
+			height: 540px;
+			width: 540px;
+			grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+			grid-row-gap: 0px;
+			grid-column-gap: 0px;
+
+			grid-template-areas: 
+				"a b c";
+		}
+
+
 }
 
-.item-b {
-	grid-area: b;
-}
+/* iPhone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  	img {
+			object-fit: cover;
 
-.item-c {
-	grid-area: c;
-}
+			width: 125px;
+			height: 125px;
 
-.container {
-	display: grid;
+			border: 1px solid black;
+		}
 
-	height: 540px;
-	width: 540px;
-	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-	grid-row-gap: 0px;
-	grid-column-gap: 0px;
+		/* grid layout */
 
-	grid-template-areas: 
-		"a b c";
+		.item-a {
+			grid-area: a;
+		}
+
+		.item-b {
+			grid-area: b;
+		}
+
+		.item-c {
+			grid-area: c;
+		}
+
+		.container {
+			display: grid;
+
+			position: flex;
+
+			height: 375px;
+			width: 375px;
+			grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+			grid-row-gap: 0px;
+			grid-column-gap: 0px;
+
+			grid-template-areas: 
+				"a b c";
+		}
 }
