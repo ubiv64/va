@@ -1,19 +1,17 @@
-img {
-	object-fit: cover;
-
-	width: 180px;
-	height: 180px;
-
-	border: 1px solid black;
-}
-
-/* grid layout for all screens */
-
 /* laptops, monitors */
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+		img {
+			object-fit: cover;
+
+			width: 180px;
+			height: 180px;
+
+			border: 1px solid black;
+		}
+
   	.item-a {
 			grid-area: a;
 		}
@@ -44,8 +42,6 @@ img {
 			grid-template-areas: 
 				"a b c";
 		}
-
-
 }
 
 /* iPhone X */
@@ -62,8 +58,6 @@ img {
 
 			border: 1px solid black;
 		}
-
-		/* grid layout */
 
 		.item-a {
 			grid-area: a;
