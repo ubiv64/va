@@ -11,29 +11,28 @@ class RecentsGrid extends Component {
 		// 	images.map()
 	// }
 
+	createGrid() {
+		let random = new Array(12).fill(null).map(() =>
+				Math.floor(Math.random() * Math.floor(138))
+		)
+
+		let images = random.map(int => {
+			 return <img src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} />;
+		});
+
+		return images
+	}
+
 	// handClick = () => {
 		//pop-up modal with img.src array as props
 	// }
 
 	render () {
+		const imageGrid = this.createGrid()
 
 		return (
 			<div className="container">
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/136.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/11.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/44.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/72.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/81.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/64.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/21.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/30.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/5.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/23.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/33.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/8.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/100.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/95.jpg"/>
-				<img src="https://vibu-a.s3.us-east-2.amazonaws.com/66.jpg"/>
+				{imageGrid} 
 			</div>
 		);
 	}
