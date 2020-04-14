@@ -7,10 +7,9 @@ class RecentsGrid extends Component {
 		super(props);
 	}
 
-	// createGrid(images, handleClick) {
-		// 	images.map()
-	// }
-
+	//pass in handleClick()
+	//might need a state variable to keep track of array
+		//may need to refactor into componentDidMount()
 	createGrid() {
 		let random = new Array(12).fill(null).map(() =>
 				Math.floor(Math.random() * Math.floor(138))
