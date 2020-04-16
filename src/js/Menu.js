@@ -16,12 +16,12 @@ class Menu extends Component {
       <Router>
           <div className="nav">
           <NavLink exact to="/" activeClassName="active" className="inactive">recents</NavLink>
-          <NavLink to="/work" activeClassName="active" className="inactive">work</NavLink>
-          <NavLink to="/contact" activeClassName="active" className="inactive">contact</NavLink>
+          <NavLink exact to="/work" activeClassName="active" className="inactive">work</NavLink>
+          <NavLink exact to="/contact" activeClassName="active" className="inactive">contact</NavLink>
           </div>
           <Switch>
             <Route exact path="/">
-              <RecentsGrid />
+              <RecentsGrid random={this.props.random} />
             </Route>
           </Switch>
       </Router>

@@ -10,11 +10,8 @@ class RecentsGrid extends Component {
 	//pass in handleClick()
 	//might need a state variable to keep track of array
 		//may need to refactor into componentDidMount()
-	createGrid() {
-		let random = new Array(12).fill(null).map(() =>
-				Math.floor(Math.random() * Math.floor(138))
-		)
-
+		//may not need it since random is passed in as props
+	createGrid(random) {
 		let images = random.map(int => {
 			 return <img src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} />;
 		});
@@ -27,7 +24,7 @@ class RecentsGrid extends Component {
 	// }
 
 	render () {
-		const imageGrid = this.createGrid()
+		const imageGrid = this.createGrid(this.props.random)
 
 		return (
 			<div className="container">

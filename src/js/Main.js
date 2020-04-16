@@ -7,14 +7,16 @@ import '../styles/Main.css';
 class Main extends Component {
   render() {
 
-    //generate random numbers and pass it to menu
+    const random = new Array(12).fill(null).map(() =>
+        Math.floor(Math.random() * Math.floor(180))
+    )
 
     return (
       <div>
       <div className="header">
       </div>
         <div className="menu">
-          <Menu />
+          <Menu random={random} />
         </div>
       </div>
     );
