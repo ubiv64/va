@@ -8,9 +8,13 @@ class PopUp extends Component {
 		this.state = {index: 0}
 	}
 
+	componentDidMount(){
+		this.setState({index: this.props.gridReq.currentIndex})
+	}
+
 	handleClick(){
 		this.setState(state => {
-			return (state.index === this.props.images.length-1) ? {index: 0} : {index: state.index+1}
+			return (state.index === this.props.gridReq.images.length-1) ? {index: 0} : {index: state.index+1}
 		});
 	}
 
@@ -23,7 +27,7 @@ class PopUp extends Component {
 	}
 
 	render() {
-		const popUp = this.renderSlides(this.props.images)
+		const popUp = this.renderSlides(this.props.gridReq.images)
 
 		return(
 			<div>{popUp}</div>

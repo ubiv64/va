@@ -7,7 +7,10 @@ import PopUp from './PopUp.js';
 class RecentsGrid extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {isClicked: false}
+		this.state = {
+			isClicked: false,
+			currentIndex: 0
+		}
 	}
 
 	//pass in handleClick()
@@ -16,40 +19,53 @@ class RecentsGrid extends Component {
 		//may not need it since random is passed in as props
 	createGrid(random) {
 		let images = random.map(int => {
-			 return <img src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} onClick={this.handlePopUpClick} />;
+			return <img id={random.indexOf(int)} className="perImage" src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} onClick={(e) => this.handlePopUpClick(e)} />;
 		});
 
 		return images;
 	}
 
 	invokePopUp(grid){
-		document.getElementById("vibu").style.opacity=.1
+		document.getElementById("vibu").hidden = true;
 
-		return <PopUp images={grid} />
+		let popUpGrid = grid.map(image => {
+			return <img id={grid.indexOf(image)} className="forPopUpImg" src={image.props.src} />
+		})
+
+		let gridReq = {
+			images: popUpGrid,
+			currentIndex: parseInt(this.state.currentIndex, 10)
+		}
+
+		return <PopUp gridReq={gridReq} />
 	}
 
-	handlePopUpClick = () => {
-		this.setState({isClicked: true})
+
+	// resetGrid()
+
+	handlePopUpClick = (event) => {
+		this.setState({
+			isClicked: true,
+			currentIndex: event.target.id
+		})
 	}
 
-	handleClick = () => {
-		this.setState({isClicked: false})
-	}
+	// handleClick = () => {
+	// 	this.setState({isClicked: false})
+	// }
 
 	render () {
 		const grid = this.createGrid(this.props.random)
 
 		let popUp = (this.state.isClicked) ? this.invokePopUp(grid) : null
 
-		console.log(this.state.isClicked)
-
 		return (
 			<div>
-				<div className="outside">
-					{popUp}
-				</div>
 				<div id="vibu" className="container">
 					{grid}
+				</div>
+				<div>
+					{popUp}
 				</div>
 			</div>
 		);

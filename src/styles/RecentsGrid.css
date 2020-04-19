@@ -1,9 +1,21 @@
+.forPopUpImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	height: 800px;
+	width: 600px;
+
+	border: 1px solid black;
+
+}
+
 /* laptops, monitors */
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-		img {
+		.perImage {
 			object-fit: cover;
 
 			width: 178px;
@@ -26,6 +38,8 @@
 
 		.container {
 			display: grid;
+
+			z-index: 0;
 
 			position: absolute;
 		  top: 20%;
@@ -51,7 +65,7 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-  	img {
+  	.perImage {
 			object-fit: cover;
 
 			width: 123px;
