@@ -1,20 +1,40 @@
-.forPopUpImg {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-
-	height: 800px;
-	width: 600px;
-
-	border: 1px solid black;
-
-}
-
 /* laptops, monitors */
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+  	.outside {
+  		height: 1000px;
+			width: 8000px;
+
+  		position: relative;
+		  top: 20%;
+		  left: 50%;
+
+		  z-index: 0;
+
+		  transform: translate(-50%);
+  	}
+  	.popUp {
+			position: absolute;
+		  top: 20%;
+		  left: 50%;
+
+		  z-index: 2;
+
+		  transform: translate(-50%);
+  	}
+  	.forPopUpImg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
+			height: 775px;
+			width: 575px;
+
+			border: 1px solid black;
+
+		}
 		.perImage {
 			object-fit: cover;
 
@@ -39,7 +59,7 @@
 		.container {
 			display: grid;
 
-			z-index: 0;
+			z-index: 1;
 
 			position: absolute;
 		  top: 20%;
@@ -65,6 +85,38 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+  	.outside {
+  		height: 800px;
+			width: 800px;
+
+  		position: relative;
+		  top: 20%;
+		  left: 50%;
+
+		  z-index: 0;
+
+		  transform: translate(-50%);
+  	}
+  	.popUp {
+			position: absolute;
+		  top: 20%;
+		  left: 50%;
+
+		  z-index: 2;
+
+		  transform: translate(-50%);
+  	}
+  	.forPopUpImg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
+			height: 575px;
+			width: 375px;
+
+			border: 1px solid black;
+
+		}
   	.perImage {
 			object-fit: cover;
 
@@ -88,6 +140,8 @@
 
 		.container {
 			display: grid;
+
+			z-index: 1;
 
 			height: 375px;
 			width: 375px;

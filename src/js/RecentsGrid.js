@@ -26,8 +26,6 @@ class RecentsGrid extends Component {
 	}
 
 	invokePopUp(grid){
-		document.getElementById("vibu").hidden = true;
-
 		let popUpGrid = grid.map(image => {
 			return <img id={grid.indexOf(image)} className="forPopUpImg" src={image.props.src} />
 		})
@@ -50,9 +48,11 @@ class RecentsGrid extends Component {
 		})
 	}
 
-	// handleClick = () => {
-	// 	this.setState({isClicked: false})
-	// }
+	//should automatically delete element when clicked outside since state will update!
+
+	handleClick = () => {
+		this.setState({isClicked: false})
+	}
 
 	render () {
 		const grid = this.createGrid(this.props.random)
@@ -61,11 +61,13 @@ class RecentsGrid extends Component {
 
 		return (
 			<div>
-				<div id="vibu" className="container">
+				<div className="container">
 					{grid}
 				</div>
-				<div>
+				<div className="popUp">
 					{popUp}
+				</div>
+				<div className="outside" onClick={this.handleClick}>
 				</div>
 			</div>
 		);
