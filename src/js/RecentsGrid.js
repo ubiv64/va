@@ -13,10 +13,6 @@ class RecentsGrid extends Component {
 		}
 	}
 
-	//pass in handleClick()
-	//might need a state variable to keep track of array
-		//may need to refactor into componentDidMount()
-		//may not need it since random is passed in as props
 	createGrid(random) {
 		let images = random.map(int => {
 			return <img id={random.indexOf(int)} className="perImage" src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} onClick={(e) => this.handlePopUpClick(e)} />;
@@ -38,17 +34,12 @@ class RecentsGrid extends Component {
 		return <PopUp gridReq={gridReq} />
 	}
 
-
-	// resetGrid()
-
 	handlePopUpClick = (event) => {
 		this.setState({
 			isClicked: true,
 			currentIndex: event.target.id
 		})
 	}
-
-	//should automatically delete element when clicked outside since state will update!
 
 	handleClick = () => {
 		this.setState({isClicked: false})
@@ -61,15 +52,17 @@ class RecentsGrid extends Component {
 
 		return (
 			<div>
-				<div className="container">
-					{grid}
-				</div>
-				<div className="popUp">
-					{popUp}
+				<div className="parent">
+					<div className="container">
+						{grid}
+					</div>
+					<div className="popUp">
+						{popUp}
+					</div>
 				</div>
 				<div className="outside" onClick={this.handleClick}>
 				</div>
-			</div>
+			</div>	
 		);
 	}
 

@@ -1,6 +1,6 @@
 /* laptops, monitors */
 @media screen 
-  and (min-device-width: 1200px) 
+  and (min-device-width: 500px) 
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.outside {
@@ -38,8 +38,8 @@
 		.perImage {
 			object-fit: cover;
 
-			width: 178px;
 			height: 178px;
+			width: 178px;
 
 			border: 1px solid black;
 		}
@@ -62,15 +62,12 @@
 			z-index: 1;
 
 			position: absolute;
-		  top: 20%;
+		  top: 15%;
 		  left: 50%;
 
 		  transform: translate(-50%);
 
-			height: 540px;
-			width: 540px;
-
-			grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
 			grid-row-gap: 0px;
 			grid-column-gap: 0px;
 
@@ -81,7 +78,7 @@
 
 /* iPhone X */
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 200px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
