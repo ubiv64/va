@@ -4,8 +4,8 @@
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.outside {
-  		height: 1000px;
-			width: 8000px;
+  		min-height: 600px;
+			min-width: 600px;
 
   		position: relative;
 		  top: 20%;
@@ -17,7 +17,7 @@
   	}
   	.popUp {
 			position: absolute;
-		  top: 20%;
+		  top: 15%;
 		  left: 50%;
 
 		  z-index: 2;
@@ -25,15 +25,10 @@
 		  transform: translate(-50%);
   	}
   	.forPopUpImg {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+  		object-fit: cover;
 
-			height: 775px;
-			width: 575px;
-
-			border: 1px solid black;
-
+			height: 700px;
+			width: 520px;
 		}
 		.perImage {
 			object-fit: cover;
@@ -83,8 +78,8 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
   	.outside {
-  		height: 800px;
-			width: 800px;
+  		min-height: 100px;
+			min-width: 100px;
 
   		position: relative;
 		  top: 20%;
@@ -96,7 +91,7 @@
   	}
   	.popUp {
 			position: absolute;
-		  top: 20%;
+		  top: 15%;
 		  left: 50%;
 
 		  z-index: 2;
@@ -104,21 +99,16 @@
 		  transform: translate(-50%);
   	}
   	.forPopUpImg {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+  		object-fit: cover;
 
-			height: 575px;
-			width: 375px;
-
-			border: 1px solid black;
-
+			min-height: 700px;
+			min-width: 520px;
 		}
-  	.perImage {
+		.perImage {
 			object-fit: cover;
 
-			width: 123px;
-			height: 123px;
+			height: 178px;
+			width: 178px;
 
 			border: 1px solid black;
 		}
