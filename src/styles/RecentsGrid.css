@@ -74,11 +74,11 @@
 /* iPhone X */
 @media only screen 
   and (min-device-width: 300px) 
-  and (max-device-width: 812px) 
+  and (max-device-width: 600px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
   	.outside {
-  		min-height: 500px;
+  		min-height: 800px;
 			min-width: 375px;
 
   		position: absolute;
@@ -145,4 +145,14 @@
 			grid-template-areas: 
 				"a b c";
 		}
+}
+
+@media (orientation: landscape) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
 }
