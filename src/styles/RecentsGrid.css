@@ -35,7 +35,7 @@
 
 			height: 178px;
 			width: 178px;
-			
+
 			border: 1px solid black;
 		}
 
@@ -79,10 +79,10 @@
   and (orientation: portrait) {
   	.outside {
   		min-height: 500px;
-			min-width: 500px;
+			min-width: 375px;
 
-  		position: relative;
-		  top: 20%;
+  		position: absolute;
+		  top: 5%;
 		  left: 50%;
 
 		  z-index: 0;
@@ -91,7 +91,7 @@
   	}
   	.popUp {
 			position: absolute;
-		  top: 10%;
+		  top: 15%;
 		  left: 50%;
 
 		  z-index: 2;
@@ -107,8 +107,8 @@
 		.perImage {
 			object-fit: cover;
 
-			height: 100px;
-			width: 100px;
+			height: 98px;
+			width: 98px;
 
 			border: 1px solid black;
 		}
@@ -132,8 +132,9 @@
 
 			position: absolute;
 		  top: 15%;
-		  left: 10%;
+		  left: 50%;
 
+		  transform: translate(-50%);
 
 			width: 300px;
 

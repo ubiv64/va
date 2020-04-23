@@ -8,7 +8,7 @@ class Main extends Component {
   render() {
 
     const random = new Array(12).fill(null).map(() =>
-        Math.floor(Math.random() * Math.floor(180))
+      Math.floor(Math.random() * Math.floor(176))
     )
 
     return (
