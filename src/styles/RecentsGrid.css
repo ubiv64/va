@@ -35,8 +35,8 @@
 
 			height: 178px;
 			width: 178px;
-
-			box-shadow: 0 0 2px 2px;
+			
+			border: 1px solid black;
 		}
 
   	.item-a {
@@ -110,7 +110,7 @@
 			height: 100px;
 			width: 100px;
 
-			box-shadow: 0 0 2px 2px;
+			border: 1px solid black;
 		}
 
 		.item-a {
@@ -131,7 +131,7 @@
 			z-index: 1;
 
 			position: absolute;
-		  top: 10%;
+		  top: 15%;
 		  left: 10%;
 
 
