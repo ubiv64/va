@@ -36,7 +36,7 @@
 			height: 178px;
 			width: 178px;
 
-			border: 1px solid black;
+			box-shadow: 0 0 2px 2px;
 		}
 
   	.item-a {
@@ -73,13 +73,13 @@
 
 /* iPhone X */
 @media only screen 
-  and (min-device-width: 200px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
   	.outside {
-  		min-height: 100px;
-			min-width: 100px;
+  		min-height: 500px;
+			min-width: 500px;
 
   		position: relative;
 		  top: 20%;
@@ -91,7 +91,7 @@
   	}
   	.popUp {
 			position: absolute;
-		  top: 15%;
+		  top: 10%;
 		  left: 50%;
 
 		  z-index: 2;
@@ -101,16 +101,16 @@
   	.forPopUpImg {
   		object-fit: cover;
 
-			min-height: 700px;
-			min-width: 520px;
+			height: 380px;
+			width: 280px;
 		}
 		.perImage {
 			object-fit: cover;
 
-			height: 178px;
-			width: 178px;
+			height: 100px;
+			width: 100px;
 
-			border: 1px solid black;
+			box-shadow: 0 0 2px 2px;
 		}
 
 		.item-a {
@@ -130,10 +130,14 @@
 
 			z-index: 1;
 
-			height: 375px;
-			width: 375px;
+			position: absolute;
+		  top: 10%;
+		  left: 10%;
 
-			grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+			width: 300px;
+
+			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
 			grid-row-gap: 0px;
 			grid-column-gap: 0px;
 
