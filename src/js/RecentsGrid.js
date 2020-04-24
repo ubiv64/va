@@ -15,10 +15,14 @@ class RecentsGrid extends Component {
 
 	createGrid(random) {
 		let images = random.map(int => {
-			return <img id={random.indexOf(int)} className="perImage" src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} onClick={(e) => this.handlePopUpClick(e)} />;
+			return <img id={random.indexOf(int)} className={this.checkClicked() ? "perImageBlur" : "perImage"} src={`https://vibu-a.s3.us-east-2.amazonaws.com/${int}.jpg`} onClick={(e) => this.handlePopUpClick(e)} />;
 		});
 
 		return images;
+	}
+
+	checkClicked() {
+		return this.state.isClicked;
 	}
 
 	invokePopUp(grid){
