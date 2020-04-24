@@ -32,9 +32,9 @@
 		}
 }
 
-/* iPhone X */
+/* iPhone X suite */
 @media screen 
-  and (min-device-width: 200px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 800px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait)  {
@@ -44,6 +44,76 @@
 		  align-items: center;
 
 			font-size: 2em;
+			text-decoration: none;
+
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+		}
+
+		.inactive {
+			-webkit-text-fill-color: white;
+		  -webkit-text-stroke-color: white;
+		  -webkit-text-stroke-width: 1px;
+
+		  text-decoration: none;
+		}
+
+		.active {
+			-webkit-text-fill-color: transparent;
+		  -webkit-text-stroke-color: white;
+		  -webkit-text-stroke-width: 1px;
+
+		  text-decoration: none;
+		}
+}
+
+/* Lower pixel ratio */
+@media screen 
+  and (min-device-width: 330px) 
+  and (max-device-width: 420px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)  {
+		.nav {
+		  display: flex;
+		  justify-content: space-evenly;
+		  align-items: center;
+
+			font-size: 2em;
+			text-decoration: none;
+
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+		}
+
+		.inactive {
+			-webkit-text-fill-color: white;
+		  -webkit-text-stroke-color: white;
+		  -webkit-text-stroke-width: 1px;
+
+		  text-decoration: none;
+		}
+
+		.active {
+			-webkit-text-fill-color: transparent;
+		  -webkit-text-stroke-color: white;
+		  -webkit-text-stroke-width: 1px;
+
+		  text-decoration: none;
+		}
+}
+
+/* Lowest pixel ratio */
+@media screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 330px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)  {
+		.nav {
+		  display: flex;
+		  justify-content: space-evenly;
+		  align-items: center;
+
+			font-size: 1.5em;
 			text-decoration: none;
 
 			border-top: 10px solid transparent;
