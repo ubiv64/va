@@ -1,7 +1,9 @@
 html {
   background-color: black;
 
-  font-family: "Arial Bold", sans-serif;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+
 
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,7 +16,7 @@ and (min-width: 300px)
 and (max-width: 900px)
 and (-webkit-min-device-pixel-ratio: 3) 
 and (orientation: landscape) {
-  body {
+  html {
     transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
