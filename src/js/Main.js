@@ -5,11 +5,20 @@ import Menu from './Menu';
 import '../styles/Main.css';
 
 class Main extends Component {
-  render() {
 
-    const random = new Array(12).fill(null).map(() =>
+  random() {
+    let random = new Array(12).fill(null).map(() =>
       Math.floor(Math.random() * Math.floor(175))
     )
+
+    let finalRandom = new Set(random)
+
+    return finalRandom.size != random.length ? this.random() : random
+  }
+
+  render() {
+
+    const random = this.random()
 
     return (
       <div>
