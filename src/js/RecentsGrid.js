@@ -69,7 +69,6 @@ class RecentsGrid extends Component {
 			</div>	
 		);
 	}
-
 }
 
 export default RecentsGrid
