@@ -1,8 +1,8 @@
 /* laptops */
 @media screen 
-  and (min-device-width: 500px) 
+  and (min-device-width: 700px) 
   and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   	.outside {
   		min-height: 600px;
 			min-width: 600px;
@@ -332,14 +332,14 @@
 		}
 }
 
-/* iPhone X, iPhone 6/7/8+, Pixel XL */
+/* iPhone 6/7/8, Pixel */
 @media only screen 
-  and (min-device-width: 400px) 
-  and (max-device-width: 600px) 
-  and (-webkit-min-device-pixel-ratio: 3)
+  and (min-device-width: 330px) 
+  and (max-device-width: 412px) 
+  and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   	.outside {
-  		min-height: 800px;
+  		min-height: 500px;
 			min-width: 375px;
 
   		position: absolute;
@@ -418,14 +418,14 @@
 		}
 }
 
-/* iPhone 6/7/8, Pixel */
+/* iPhone X, iPhone 6/7/8+, Pixel XL */
 @media only screen 
-  and (min-device-width: 330px) 
-  and (max-device-width: 420px) 
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-device-width: 411px) 
+  and (max-device-width: 600px) 
+  and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
   	.outside {
-  		min-height: 800px;
+  		min-height: 500px;
 			min-width: 375px;
 
   		position: absolute;
@@ -511,7 +511,7 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   	.outside {
-  		min-height: 800px;
+  		min-height: 500px;
 			min-width: 375px;
 
   		position: absolute;
@@ -578,6 +578,182 @@
 		  left: 50%;
 
 		  transform: translate(-50%);
+
+			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
+			grid-row-gap: 0px;
+			grid-column-gap: 0px;
+
+			grid-template-areas: 
+				"a b c";
+		}
+}
+
+/* 
+	LANDSCAPE 
+					*/
+
+/* iPhone 6/7/8, Pixel */
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 750px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	.outside {
+  		min-height: 375px;
+			min-width: 500px;
+
+  		position: absolute;
+		  top: 5%;
+		  left: 50%;
+
+		  z-index: 0;
+
+		  transform: translate(-50%);
+  	}
+  	.popUp {
+			position: absolute;
+		  top: 25%;
+		  left: 50%;
+
+		  z-index: 2;
+
+		  transform: translate(-50%);
+  	}
+  	.forPopUpImg {
+  		object-fit: cover;
+
+			height: 220px;
+			width: 160px;
+		}
+		.perImage {
+			object-fit: cover;
+
+			height: 58px;
+			width: 58px;
+
+			border: 1px solid black;
+		}
+		.perImageBlur {
+			object-fit: cover;
+
+			height: 58px;
+			width: 58px;
+
+			filter: blur(4px);
+
+			border: 1px solid black;
+		}
+
+		.item-a {
+			grid-area: a;
+		}
+
+		.item-b {
+			grid-area: b;
+		}
+
+		.item-c {
+			grid-area: c;
+		}
+
+		.container {
+			display: grid;
+
+			z-index: 1;
+
+			position: absolute;
+		  top: 25%;
+		  left: 50%;
+
+		  transform: translate(-50%);
+
+			width: 180px;
+
+			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
+			grid-row-gap: 0px;
+			grid-column-gap: 0px;
+
+			grid-template-areas: 
+				"a b c";
+		}
+}
+
+/* iPhone X, iPhone 6/7/8+, Pixel XL */
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  	.outside {
+  		min-height: 375px;
+			min-width: 500px;
+
+  		position: absolute;
+		  top: 5%;
+		  left: 50%;
+
+		  z-index: 0;
+
+		  transform: translate(-50%);
+  	}
+  	.popUp {
+			position: absolute;
+		  top: 21%;
+		  left: 50%;
+
+		  z-index: 2;
+
+		  transform: translate(-50%);
+  	}
+  	.forPopUpImg {
+  		object-fit: cover;
+
+			height: 260px;
+			width: 190px;
+		}
+		.perImage {
+			object-fit: cover;
+
+			height: 68px;
+			width: 68px;
+
+			border: 1px solid black;
+		}
+		.perImageBlur {
+			object-fit: cover;
+
+			height: 68px;
+			width: 68px;
+
+			filter: blur(4px);
+
+			border: 1px solid black;
+		}
+
+		.item-a {
+			grid-area: a;
+		}
+
+		.item-b {
+			grid-area: b;
+		}
+
+		.item-c {
+			grid-area: c;
+		}
+
+		.container {
+			display: grid;
+
+			z-index: 1;
+
+			position: absolute;
+		  top: 21%;
+		  left: 50%;
+
+		  transform: translate(-50%);
+
+			width: 210px;
 
 			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
 			grid-row-gap: 0px;

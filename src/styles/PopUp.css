@@ -146,3 +146,50 @@
 			margin-right: auto;
 		}
 	}
+
+	/*
+		LANDSCAPE
+						*/
+
+/* pixel-ratio: 3 */
+@media screen 
+  and (min-device-width: 750px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  	.button {
+			-webkit-appearance:none;
+			background: transparent;
+    	border: none;
+    	outline:none;
+
+			height: 280px;
+			width: 210px;
+
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+		} 	
+	}
+
+/* pixel-ratio: 2 */
+@media screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 750px) 
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.button {
+			-webkit-appearance:none;
+			background: transparent;
+    	border: none;
+    	outline:none;
+
+			height: 210px;
+			width: 180px;
+
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+		} 	
+	}
