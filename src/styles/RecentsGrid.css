@@ -81,90 +81,6 @@
 		}
 }
 
-/* iPad */
-/*@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 768px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-  	.outside {
-  		min-height: 600px;
-			min-width: 600px;
-
-  		position: relative;
-		  top: 20%;
-		  left: 50%;
-
-		  z-index: 0;
-
-		  transform: translate(-50%);
-  	}
-  	.popUp {
-			position: absolute;
-		  top: 15%;
-		  left: 50%;
-
-		  z-index: 2;
-
-		  transform: translate(-50%);
-  	}
-  	.forPopUpImg {
-  		object-fit: cover;
-
-			height: 700px;
-			width: 520px;
-		}
-		.perImage {
-			object-fit: cover;
-
-			height: 178px;
-			width: 178px;
-
-			border: 1px solid black;
-		}
-		.perImageBlur {
-			object-fit: cover;
-
-			height: 178px;
-			width: 178px;
-
-			filter: blur(4px);
-
-			border: 1px solid black;
-		}
-
-  	.item-a {
-			grid-area: a;
-		}
-
-		.item-b {
-			grid-area: b;
-		}
-
-		.item-c {
-			grid-area: c;
-		}
-
-		.container {
-			display: grid;
-
-			z-index: 1;
-
-			position: absolute;
-		  top: 15%;
-		  left: 50%;
-
-		  transform: translate(-50%);
-
-			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
-			grid-row-gap: 0px;
-			grid-column-gap: 0px;
-
-			grid-template-areas: 
-				"a b c";
-		}
-}*/
-
 /* iPad Pro 10.5" */
 @media only screen 
   and (min-device-width: 834px) 
@@ -339,7 +255,7 @@
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.outside {
-  		min-height: 600px;
+  		min-height: 1000px;
 			min-width: 600px;
 
   		position: relative;
@@ -427,7 +343,7 @@
 			min-width: 375px;
 
   		position: absolute;
-		  top: 5%;
+		  top: 10%;
 		  left: 50%;
 
 		  z-index: 0;
@@ -587,92 +503,6 @@
 				"a b c";
 		}
 }
-
-/* Responsive / iPhone 11, XR */
-/*@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 896px) 
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  	.outside {
-  		min-height: 500px;
-			min-width: 450px;
-
-  		position: absolute;
-		  top: 15%;
-		  left: 50%;
-
-		  z-index: 0;
-
-		  transform: translate(-50%);
-  	}
-  	.popUp {
-			position: absolute;
-		  top: 15%;
-		  left: 50%;
-
-		  z-index: 2;
-
-		  transform: translate(-50%);
-  	}
-  	.forPopUpImg {
-  		object-fit: cover;
-
-			height: 380px;
-			width: 280px;
-		}
-		.perImage {
-			object-fit: cover;
-
-			height: 98px;
-			width: 98px;
-
-			border: 1px solid black;
-		}
-		.perImageBlur {
-			object-fit: cover;
-
-			height: 98px;
-			width: 98px;
-
-			filter: blur(4px);
-
-			border: 1px solid black;
-		}
-
-		.item-a {
-			grid-area: a;
-		}
-
-		.item-b {
-			grid-area: b;
-		}
-
-		.item-c {
-			grid-area: c;
-		}
-
-		.container {
-			display: grid;
-
-			z-index: 1;
-
-			position: absolute;
-		  top: 15%;
-		  left: 50%;
-
-		  transform: translate(-50%);
-
-			width: 300px;
-
-			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
-			grid-row-gap: 0px;
-			grid-column-gap: 0px;
-
-			grid-template-areas: 
-				"a b c";
-		}
-}*/
 
 /* iPhone 11 Pro Max */
 @media only screen 
@@ -933,92 +763,6 @@
 				"a b c";
 		}
 }
-
-/* Responsive, Pixel XL */
-/*@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 896px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-  	.outside {
-  		min-height: 290px;
-			min-width: 500px;
-
-  		position: absolute;
-		  top: 25%;
-		  left: 50%;
-
-		  z-index: 0;
-
-		  transform: translate(-50%);
-  	}
-  	.popUp {
-			position: absolute;
-		  top: 21%;
-		  left: 50%;
-
-		  z-index: 2;
-
-		  transform: translate(-50%);
-  	}
-  	.forPopUpImg {
-  		object-fit: cover;
-
-			height: 260px;
-			width: 190px;
-		}
-		.perImage {
-			object-fit: cover;
-
-			height: 68px;
-			width: 68px;
-
-			border: 1px solid black;
-		}
-		.perImageBlur {
-			object-fit: cover;
-
-			height: 68px;
-			width: 68px;
-
-			filter: blur(4px);
-
-			border: 1px solid black;
-		}
-
-		.item-a {
-			grid-area: a;
-		}
-
-		.item-b {
-			grid-area: b;
-		}
-
-		.item-c {
-			grid-area: c;
-		}
-
-		.container {
-			display: grid;
-
-			z-index: 1;
-
-			position: absolute;
-		  top: 21%;
-		  left: 50%;
-
-		  transform: translate(-50%);
-
-			width: 210px;
-
-			grid-template: repeat(minmax(100px, 1fr)) / repeat(minmax(100px, 1fr));
-			grid-row-gap: 0px;
-			grid-column-gap: 0px;
-
-			grid-template-areas: 
-				"a b c";
-		}
-}*/
 
 @media only screen 
   and (min-device-width: 414px) 

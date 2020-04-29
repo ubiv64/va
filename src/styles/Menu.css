@@ -30,6 +30,45 @@
 
 		  text-decoration: none;
 		}
+
+		.work {
+			width: 350px; 
+			height: 350px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 2em;
+
+			-webkit-text-fill-color: #F6F9FF;
+
+		  text-decoration: none;
+		}
+		.contact {
+			width: 350px; 
+			height: 350px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 2em;
+
+			-webkit-text-fill-color: #F6F9FF;
+
+		  text-decoration: none;
+		}
 	}
 
 /* iPhone X */
@@ -56,11 +95,48 @@
 
 		  text-decoration: none;
 		}
-
 		.active {
 			-webkit-text-fill-color: transparent;
 		  -webkit-text-stroke-color: white;
 		  -webkit-text-stroke-width: 1px;
+
+		  text-decoration: none;
+		}
+		.work {
+			width: 200px; 
+			height: 200px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 1em;
+
+			-webkit-text-fill-color: #F6F9FF;
+
+		  text-decoration: none;
+		}
+		.contact {
+			width: 200px; 
+			height: 200px;
+			
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 1em;
+
+			-webkit-text-fill-color: #F6F9FF;
 
 		  text-decoration: none;
 		}
@@ -95,6 +171,44 @@
 			-webkit-text-fill-color: transparent;
 		  -webkit-text-stroke-color: white;
 		  -webkit-text-stroke-width: 1px;
+
+		  text-decoration: none;
+		}
+		.work {
+			width: 200px; 
+			height: 200px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 1em;
+
+			-webkit-text-fill-color: #F6F9FF;
+
+		  text-decoration: none;
+		}
+		.contact {
+			width: 200px; 
+			height: 200px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 1em;
+
+			-webkit-text-fill-color: #F6F9FF;
 
 		  text-decoration: none;
 		}
@@ -133,38 +247,42 @@
 
 		  text-decoration: none;
 		}
+		.work {
+			width: 200px; 
+			height: 200px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 1em;
+
+			-webkit-text-fill-color: #F6F9FF;
+
+		  text-decoration: none;
+		}
+		.contact {
+			width: 200px; 
+			height: 200px;
+
+			position: absolute;
+		  top: 35%;
+		  left: 50%;
+
+		  font-family: "Arial", sans-serif;
+		  font-weight: 100;
+
+		  transform: translate(-50%);
+
+			font-size: 1em;
+
+			-webkit-text-fill-color: #F6F9FF;
+
+		  text-decoration: none;
+		}
 	}
-
-	/* Responsive */
-/*@media screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 896px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-		.nav {
-		  display: flex;
-		  justify-content: space-evenly;
-		  align-items: center;
-
-			font-size: 2em;
-			text-decoration: none;
-
-			border-top: 10px solid transparent;
-			border-bottom: 10px solid transparent;
-		}
-
-		.inactive {
-			-webkit-text-fill-color: white;
-		  -webkit-text-stroke-color: white;
-		  -webkit-text-stroke-width: 1px;
-
-		  text-decoration: none;
-		}
-
-		.active {
-			-webkit-text-fill-color: transparent;
-		  -webkit-text-stroke-color: white;
-		  -webkit-text-stroke-width: 1px;
-
-		  text-decoration: none;
-		}
-	}*/

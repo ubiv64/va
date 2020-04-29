@@ -10,3 +10,7 @@ html {
 
   text-rendering: optimizeLegibility;
 }
+
+a {
+	-webkit-text-fill-color: #4C7DEE;
+}			

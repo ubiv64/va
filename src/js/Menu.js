@@ -21,7 +21,17 @@ class Menu extends Component {
           </div>
           <Switch>
             <Route exact path="/">
-              <RecentsGrid random={this.props.random} />
+              <RecentsGrid random={this.props.menu.random} />
+            </Route>
+            <Route exact path="/work">
+              <div className="work">
+              {this.props.menu.work}
+              </div>
+            </Route>
+            <Route exact path="/contact">
+              <div className="contact">
+              {this.props.menu.contact}
+              </div>
             </Route>
           </Switch>
       </Router>
@@ -31,7 +41,8 @@ class Menu extends Component {
 
 export default Menu
 
-// <Route path="/work">
-// </Route>
-// <Route path="/contact">
-// </Route>
+// <Route exact path="/contact">
+//   <div className="contact">
+//   {this.props.menu.contact}
+//   </div>
+// </Route>  
