@@ -1,6 +1,6 @@
 /* laptops, monitors */
 @media screen 
-  and (min-device-width: 500px) 
+  and (min-device-width: 700px) 
   and (max-device-width: 8000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 		.nav {
@@ -136,7 +136,7 @@
 	}
 
 	/* Responsive */
-@media screen 
+/*@media screen 
   and (min-device-width: 414px) 
   and (max-device-width: 896px) 
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -167,4 +167,4 @@
 
 		  text-decoration: none;
 		}
-	}
+	}*/

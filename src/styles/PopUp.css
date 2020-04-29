@@ -1,6 +1,6 @@
 /* laptops */
 @media only screen 
-  and (min-device-width: 500px) 
+  and (min-device-width: 700px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.button {
@@ -126,8 +126,8 @@
 		} 	
 	}
 
-/* iPhone X */
-@media screen 
+/* Responsive */
+/*@media screen 
   and (min-device-width: 414px) 
   and (max-device-width: 896px) 
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -146,7 +146,7 @@
 			margin-right: auto;
 		} 	
 	}
-
+*/
 /* for Demir */
 @media screen 
 	and (min-device-width: 300px) 
@@ -194,10 +194,10 @@
 		} 	
 	}
 
-/* iPhone 6, 7, 8 */
+/* iPhone 6, 7, 8, Pixel 2 */
 @media screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (max-device-width: 731px) 
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   	.button {
@@ -239,7 +239,7 @@
   }
 
 /* Responsive */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 896px) 
   and (-webkit-min-device-pixel-ratio: 2)
@@ -258,4 +258,4 @@
 			margin-left: auto;
 			margin-right: auto;
 		} 	
-  }
+  }*/
