@@ -24,7 +24,7 @@ class Main extends Component {
         vibu anbarasan
         </p>
         <p> 
-        <a href="https://github.com/ubiv64">sofware engineer</a>
+        <a href="https://github.com/ubiv64">software engineer</a>
         </p>
         <p> 
         based out of Dallas, TX
