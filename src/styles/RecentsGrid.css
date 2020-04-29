@@ -1,6 +1,6 @@
 /* laptops */
 @media screen 
-  and (min-device-width: 900px) 
+  and (min-device-width: 825px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.outside {
@@ -592,13 +592,14 @@
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 896px) 
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
   	.outside {
   		min-height: 500px;
-			min-width: 375px;
+			min-width: 450px;
 
   		position: absolute;
-		  top: 5%;
+		  top: 15%;
 		  left: 50%;
 
 		  z-index: 0;
@@ -854,11 +855,11 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
   	.outside {
-  		min-height: 375px;
+  		min-height: 220px;
 			min-width: 500px;
 
   		position: absolute;
-		  top: 5%;
+		  top: 25%;
 		  left: 50%;
 
 		  z-index: 0;
@@ -940,11 +941,11 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
   	.outside {
-  		min-height: 375px;
+  		min-height: 290px;
 			min-width: 500px;
 
   		position: absolute;
-		  top: 5%;
+		  top: 25%;
 		  left: 50%;
 
 		  z-index: 0;
@@ -1025,11 +1026,11 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
   	.outside {
-  		min-height: 375px;
+  		min-height: 290px;
 			min-width: 500px;
 
   		position: absolute;
-		  top: 5%;
+		  top: 25%;
 		  left: 50%;
 
 		  z-index: 0;
