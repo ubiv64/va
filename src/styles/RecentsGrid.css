@@ -1,6 +1,6 @@
 /* laptops */
 @media screen 
-  and (min-device-width: 825px) 
+  and (min-device-width: 500px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.outside {
