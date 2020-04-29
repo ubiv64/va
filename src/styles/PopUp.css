@@ -1,6 +1,6 @@
 /* laptops */
 @media only screen 
-  and (min-device-width: 500px) 
+  and (min-device-width: 900px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.button {
@@ -84,9 +84,9 @@
 		}
   }
 
-/* pixel-ratio: 3 */
+/* iPhone X */
 @media screen 
-  and (min-device-width: 300px) 
+  and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) {
   	.button {
@@ -105,10 +105,31 @@
 		} 	
 	}
 
-/* pixel-ratio: 2 */
+/* iPhone 6, 7, 8 */
 @media screen 
-  and (min-device-width: 330px) 
-  and (max-device-width: 420px) 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.button {
+			-webkit-appearance:none;
+			background: transparent;
+    	border: none;
+    	outline:none;
+
+			height: 400px;
+			width: 300px;
+
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+		} 	
+	}
+
+/* iPhone X */
+@media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
   and (-webkit-min-device-pixel-ratio: 2) {
   	.button {
 			-webkit-appearance:none;
@@ -151,10 +172,11 @@
 		LANDSCAPE
 						*/
 
-/* pixel-ratio: 3 */
+/* iPhone X */
 @media screen 
-  and (min-device-width: 750px) 
-  and (max-device-width: 900px) 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px)
+  and (orientation: landscape)  
   and (-webkit-min-device-pixel-ratio: 3) {
   	.button {
 			-webkit-appearance:none;
@@ -172,10 +194,10 @@
 		} 	
 	}
 
-/* pixel-ratio: 2 */
+/* iPhone 6, 7, 8 */
 @media screen 
-  and (min-device-width: 600px) 
-  and (max-device-width: 750px) 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
   	.button {
@@ -184,7 +206,7 @@
     	border: none;
     	outline:none;
 
-			height: 210px;
+			height: 240px;
 			width: 180px;
 
 			display: block;
@@ -193,3 +215,47 @@
 			margin-right: auto;
 		} 	
 	}
+
+/* iPhone 11 Pro Max */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  	.button {
+			-webkit-appearance:none;
+			background: transparent;
+    	border: none;
+    	outline:none;
+
+			height: 280px;
+			width: 210px;
+
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+		} 	
+  }
+
+/* Responsive */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	.button {
+			-webkit-appearance:none;
+			background: transparent;
+    	border: none;
+    	outline:none;
+
+			height: 280px;
+			width: 210px;
+
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+		} 	
+  }
