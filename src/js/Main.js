@@ -8,7 +8,7 @@ class Main extends Component {
 
   random() {
     let random = new Array(12).fill(null).map(() =>
-      Math.floor(Math.random() * Math.floor(175))
+      Math.floor(Math.random() * Math.floor(179))
     )
 
     let finalRandom = new Set(random)
