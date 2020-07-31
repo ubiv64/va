@@ -39,9 +39,6 @@ class Main extends Component {
         <p> 
         <a href="mailto:vibu@live.com">email</a>
         </p>
-        <p> 
-        <a href="https://instagram.com/ubiv">instagram</a>
-        </p>
       </div>
 
     const menu = {
