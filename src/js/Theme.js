@@ -2,11 +2,17 @@ import React, { useState } from 'react'
 
 import Light from './Light.js';
 
-import '../styles/Main.css';
-
 function Theme() {
 
 	const [bulb, setBulb] = useState(false)
+
+	if (bulb) {
+		document.body.style.backgroundColor = "#000000"
+		document.body.style.color = "#FFFFFF"
+	} else {
+		document.body.style.backgroundColor = "#F9E4CF"
+		document.body.style.color = "#000000"
+	}
 
 	function lightSwitch() {
 		document.body.removeChild(document.getElementsByTagName('canvas')[0])
@@ -20,17 +26,31 @@ function Theme() {
 		lightSwitch: lightSwitch
 	}
 
-	if (bulb) {
-		document.body.style.backgroundColor = "#000000"
-		document.body.style.color = "#FFFFFF"
-	} else {
-		document.body.style.backgroundColor = "#F9E4CF"
-		document.body.style.color = "#000000"
+	function handleLink(linkType) {
+		switch (linkType) {
+			case "tools" :
+				console.log("tools")
+				break
+			case "other" :
+				console.log("other")
+				break
+		}
 	}
+
+
+
+	const menu =
+		<nav>
+	    <ul>
+	      <li id="tools" onClick={() => handleLink("tools")}>tools</li>
+	      <li id="other" onClick={() => handleLink("other")}>other</li>
+	    </ul>
+	  </nav>
 
 	return(
 		<div>
 			<Light object={object} />
+			{menu}
 		</div>
 	)
 }

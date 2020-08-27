@@ -2,10 +2,11 @@ import React from 'react';
 
 import Theme from './Theme.js';
 
+// import Menu from './Menu.js'
+
 import '../styles/Main.css';
 
 function Main() {
-
 
   return(
     <div>
@@ -19,3 +20,5 @@ function Main() {
 }
 
 export default Main
+
+// <li><a href="vibuanbarasan64@gmail.com">Email</a></li>
