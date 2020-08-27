@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="65px" viewBox="0 0 41 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="va_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop_light" transform="translate(-1003.000000, -328.000000)" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(1003.000000, 328.000000)">
+                <rect id="Rectangle" transform="translate(21.000000, 3.500000) rotate(180.000000) translate(-21.000000, -3.500000) " x="11" y="0" width="20" height="7" rx="3.5"></rect>
+                <path d="M20.5,7.24960587 C31.8218374,7.24960587 41,16.3638092 41,27.6067487 C41,35.7276003 36.2115039,42.7378324 29.2854374,46.0049928 L29.2859656,58.1515649 C30.0045098,58.7907806 30.4571429,59.7224362 30.4571429,60.75981 C30.4571429,62.687171 28.894708,64.2496059 26.9673469,64.2496059 L14.0326531,64.2496059 C12.105292,64.2496059 10.5428571,62.687171 10.5428571,60.75981 C10.5428571,59.7224362 10.9954902,58.7907806 11.7140344,58.1515649 L11.7145626,46.0049928 C4.78849613,42.7378324 0,35.7276003 0,27.6067487 C0,16.3638092 9.17816263,7.24960587 20.5,7.24960587 Z" id="Combined-Shape" transform="translate(20.500000, 35.749606) rotate(180.000000) translate(-20.500000, -35.749606) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
