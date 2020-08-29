@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 
 import Light from './Light.js';
 
+import '../styles/Main.css';
+
 function Theme() {
 
 	const [bulb, setBulb] = useState(false)
+
+	const underline = {
+		borderBottom: (!bulb) ? '.1em solid black' : '.1em solid white',
+		lineHeight: '2em'
+	}
 
 	if (bulb) {
 		document.body.style.backgroundColor = "#000000"
@@ -26,26 +33,40 @@ function Theme() {
 		lightSwitch: lightSwitch
 	}
 
+	function updateClass(toAdd, toRemove) {
+		if (!bulb) {
+			if (toRemove.hasAttribute("style")) {
+				toRemove.removeAttribute("style")
+				toAdd.setAttribute("style", "underline")
+			}
+		} else {
+			if (toRemove.hasAttribute("style")) {
+				toRemove.removeAttribute("style")
+				toAdd.setAttribute("style", underline)
+			}
+		}
+	}
+
 	function handleLink(linkType) {
+		let element = document.getElementById(linkType)
+		let toAdd, toRemove
 		switch (linkType) {
 			case "tools" :
-				console.log("tools")
+				[toAdd, toRemove] = [element, document.getElementById("other")]
+				updateClass(toAdd, toRemove)
 				break
 			case "other" :
-				console.log("other")
+				[toAdd, toRemove] = [element, document.getElementById("tools")]
+				updateClass(toAdd, toRemove)
 				break
 		}
 	}
 
-
-
 	const menu =
-		<nav>
-	    <ul>
-	      <li id="tools" onClick={() => handleLink("tools")}>tools</li>
-	      <li id="other" onClick={() => handleLink("other")}>other</li>
-	    </ul>
-	  </nav>
+    <nav>
+      <li id="tools" style={underline} onClick={() => handleLink("tools")}>tools </li>
+      <li id="other" onClick={() => handleLink("other")}> other </li>
+    </nav>
 
 	return(
 		<div>
