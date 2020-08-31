@@ -27,7 +27,7 @@ function Menu(props) {
 
 	const menu =
     <nav className="menu">
-      <li onClick={() => handleLink("tools")}>tools </li>
+      <li onClick={() => handleLink("tools")}> tools </li>
       <li onClick={() => handleLink("other")}> other </li>
       	{(sub === "tools") ? tools : other}
       <p> </p>

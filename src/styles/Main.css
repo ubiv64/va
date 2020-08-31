@@ -58,6 +58,16 @@ h5 {
   line-height: 2em;
 }
 
+.menu li:hover {
+  display: inline-block;
+
+  border-bottom-width: .1em;
+  border-bottom-style: solid;
+  
+  margin-right: 90px;
+  line-height: 2em;
+}
+
 .email {
 	font-family: "Helvetica";
 	font-size: 1em;
