@@ -37,7 +37,7 @@ function Light(props) {
   		frictionAir: 0.005,
   		render: {
   			sprite: {
-  				texture: require(`../assets/${props.object.link}.svg`)
+  				texture: require(`../assets/${"bulb".concat(props.object.link)}.svg`)
   			}
   		}
   	});

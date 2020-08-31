@@ -25,7 +25,6 @@ h4 {
 
 	display: inline;
   width: 520px;
-  height: 199px;
 
 /*	font-size: 1.2em;
 
@@ -38,7 +37,11 @@ h4 {
   height: 158px;*/
 }
 
-nav {
+h5 {
+	font-size: .75em;
+}
+
+.menu {
 	font-size: 1.5em;
 
   list-style: none;
@@ -48,9 +51,82 @@ nav {
 	left: 68px;
 }
 
-li {
+.menu li {
   display: inline-block;
   
   margin-right: 90px;
   line-height: 2em;
+}
+
+.email {
+	font-family: "Helvetica";
+	font-size: 1em;
+
+	text-decoration: none;
+	color: inherit;
+
+	position: absolute;
+	top: 1200px;
+	left: 950px;
+
+	padding-bottom: 20px;
+}
+
+.front {
+	position: absolute;
+	top: 150px;
+	left: 25px;
+}
+
+.front-copy {
+	position: absolute;
+	top: 140px;
+	left: 125px;
+}
+
+.back {
+	position: absolute;
+	top: 265px;
+	left: 25px;
+}
+
+.back-copy {
+	position: absolute;
+	top: 255px;
+	left: 125px;
+}
+
+.other {
+	font-size: 1em;
+
+  list-style: none;
+
+	text-decoration: underline;
+	color: inherit;
+
+	position: absolute;
+	top: 140px;
+	left: 20px;
+}
+
+.other li, a {
+	font-size: 1em;
+
+  list-style: none;
+
+	text-decoration: underline;
+	color: inherit;
+}
+
+.avail {
+	position: absolute;
+	top: 180px;
+	left: 0px;
+}
+
+.avail-copy {
+	font-size: 1em;
+	position: absolute;
+	top: 140px;
+	left: 45px;
 }
