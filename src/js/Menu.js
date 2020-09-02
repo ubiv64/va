@@ -9,7 +9,7 @@ function Menu(props) {
 	}
 
 	const tools = 
-		<div className="tools">
+		<div>
 			<img className="front" src={require(`../assets/${"front".concat(props.object.link)}.svg`)} />
 				<h5 className="front-copy"> React, ES6 </h5>
       <img className="back" src={require(`../assets/${"back".concat(props.object.link)}.svg`)} />
@@ -18,8 +18,8 @@ function Menu(props) {
 
 	const other =
 		<nav className="other">
-			<li className="other-links"><a href="https://github.com/ubiv64">GitHub</a></li>
-			<li className="other-links"><a href="https://www.are.na/vibu-a">Arena</a></li>
+			<li><a href="https://github.com/ubiv64">GitHub</a></li>
+			<li><a href="https://www.are.na/vibu-a">Arena</a></li>
 			<img className="avail" src={require(`../assets/avail.svg`)} />
 			<h5 className="avail-copy"> Available </h5>  
 		</nav>
@@ -27,8 +27,8 @@ function Menu(props) {
 
 	const menu =
     <nav className="menu">
-      <li onClick={() => handleLink("tools")}> tools </li>
-      <li onClick={() => handleLink("other")}> other </li>
+      <li className={(sub === "tools") ? "underline" : null} onClick={() => handleLink("tools")}> tools </li>
+      <li className={(sub === "other") ? "underline" : null} onClick={() => handleLink("other")}> other </li>
       	{(sub === "tools") ? tools : other}
       <p> </p>
     </nav>
