@@ -4,10 +4,6 @@ function Menu(props) {
 
 	const [sub, setSub] = useState("tools")
 
-	function handleLink(linkType) {
-		setSub(linkType)
-	}
-
 	const tools = 
 		<div>
 			<img className="front" src={require(`../assets/${"front".concat(props.object.link)}.svg`)} />
@@ -27,8 +23,8 @@ function Menu(props) {
 
 	const menu =
     <nav className="menu">
-      <li className={(sub === "tools") ? "underline" : null} onClick={() => handleLink("tools")}> tools </li>
-      <li className={(sub === "other") ? "underline" : null} onClick={() => handleLink("other")}> other </li>
+      <li className={(sub === "tools") ? "underline" : null} onClick={setSub("tools")}> tools </li>
+      <li className={(sub === "other") ? "underline" : null} onClick={setSub("other")}> other </li>
       	{(sub === "tools") ? tools : other}
       <p> </p>
     </nav>
