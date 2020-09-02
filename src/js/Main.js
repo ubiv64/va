@@ -9,11 +9,10 @@ import '../styles/Main.css';
 function Main() {
 
   return(
-    <div>
+    <div className="empty">
       <h2> Vibu Anbarasan </h2>
       <h4> full stack dev with experience in writing service-oriented APIs and serverless frontend web applications. </h4>
       <Theme />
-      <a className="email" href="mailto:vibu.anbarasan.64@gmail.com">Email</a>
     </div>
   )
 

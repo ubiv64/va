@@ -23,6 +23,7 @@ function Theme() {
 	var lightObject = {
 		stroke: (!bulb) ? "black" : "white", 
 		link: (!bulb) ? "" : "Lit",
+		rectangle: (window.innerWidth < 900) ?  { x: 500, y: 300, pointAX: 515 } : { x: 400, y: 300, pointAX: 430 },
 		canvasSize: (window.innerWidth < 900) ? 500 : 800,
 		lightSwitch: lightSwitch
 	}
@@ -35,6 +36,7 @@ function Theme() {
 		<div>
 			<Light object={lightObject} />
 			<Menu object={menuObject}/>
+			<a className="email" href="mailto:vibu.anbarasan.64@gmail.com">Email</a>
 		</div>
 	)
 }

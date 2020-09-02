@@ -2,7 +2,8 @@ import React from 'react'
 
 import { 
 	Engine, 
-	World, 
+	World,
+  Body, 
 	Bodies, 
 	Render, 
 	Constraint, 
@@ -32,7 +33,7 @@ function Light(props) {
   var runner = Runner.create();
   Runner.run(runner, engine);
 
-  var light = Bodies.rectangle(600, 100, 20, 40, 
+  var light = Bodies.rectangle(props.object.rectangle.x, props.object.rectangle.y, 20, 40, 
   	{ density: 0.05, 
   		frictionAir: 0.005,
   		render: {
@@ -44,17 +45,16 @@ function Light(props) {
 
   World.add(world, light)
   World.add(world, Constraint.create({
-    pointA: { x: 615, y: -10 },
+    pointA: { x: props.object.rectangle.pointAX, y: -10 },
     bodyB: light,
     pointB: { x: 0, y: -32 },
-    stiffness: 0.6,
+    stiffness: 1,
     damping: 0.05,
     render : {
     	strokeStyle: props.object.stroke,
     	type: "line",
     	anchors: false,
-    	lineWidth: 4,
-    	zIndex: 3
+    	lineWidth: 4
     },
     type: "line"
   }));

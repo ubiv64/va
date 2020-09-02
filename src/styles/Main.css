@@ -2,18 +2,21 @@ html {
   font-family: "Andale Mono";
 }
 
+canvas {
+	position: absolute;
+
+	top: -200px;
+	left: 500px;
+
+	z-index: -1;
+}
+
 h2 {
 	font-size: 2.3em;
 
 	position: absolute;
 	top: 72px;
 	left: 68px;
-
-/*	font-size: 1.4em;
-
-	position: absolute;
-	top: 59px;
-	left: 34px;*/
 }
 
 h4 {
@@ -25,16 +28,6 @@ h4 {
 
 	display: inline;
   width: 520px;
-
-/*	font-size: 1.2em;
-
-	position: absolute;
-	top: 180px;
-	left: 34px;
-
-	display: inline-block;
-  width: 300px;
-  height: 158px;*/
 }
 
 h5 {
@@ -58,16 +51,6 @@ h5 {
   line-height: 2em;
 }
 
-/*.menu li:hover {
-  display: inline-block;
-
-  border-bottom-width: .1em;
-  border-bottom-style: solid;
-  
-  margin-right: 90px;
-  line-height: 2em;
-}*/
-
 .email {
 	font-family: "Helvetica";
 	font-size: 1em;
@@ -75,11 +58,10 @@ h5 {
 	text-decoration: none;
 	color: inherit;
 
-	position: absolute;
-	top: 1200px;
-	left: 950px;
-
-	padding-bottom: 20px;
+  position: absolute;
+  top: 1100px;
+  left: 900px;
+  height: 2.5rem;
 }
 
 .front {
@@ -98,6 +80,8 @@ h5 {
 	position: absolute;
 	top: 265px;
 	left: 25px;
+
+	padding-bottom: 100px;
 }
 
 .back-copy {
@@ -139,6 +123,8 @@ h5 {
 	position: absolute;
 	top: 140px;
 	left: 45px;
+
+	padding-bottom: 75px;
 }
 
 
@@ -147,3 +133,142 @@ h5 {
   border-bottom-style: solid;
   line-height: 2em;
 }
+
+@media screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) {
+		canvas {
+			position: absolute;
+
+			top: -100px;
+			left: -10px;
+		}
+
+  	h2 {
+  		font-size: 1.4em;
+
+			position: absolute;
+			top: 59px;
+			left: 34px;
+		}
+
+		h4 {
+			font-size: 1.3em;
+
+			position: absolute;
+			top: 180px;
+			left: 34px;
+
+			display: inline-block;
+		  width: 325px;
+		  height: 158px;
+		}
+
+		h5 {
+			font-size: .75em;
+		}
+
+		.menu {
+			font-size: 1.2em;
+
+		  list-style: none;
+
+			position: absolute;
+			top: 425px;
+			left: 34px;
+		}
+
+		.menu li {
+		  display: inline-block;
+		  
+		  margin-right: 75px;
+		  line-height: 2em;
+		}
+
+		.email {
+			font-family: "Helvetica";
+			font-size: .8em;
+
+			text-decoration: none;
+			color: inherit;
+
+		  position: absolute;
+		  top: 770px;
+		  left: 300px;
+		  height: 2.5rem;
+		}
+
+		.front {
+			position: absolute;
+			top: 100px;
+			left: 20px;
+
+			width: 15%;
+		}
+
+		.front-copy {
+			position: absolute;
+			top: 95px;
+			left: 90px;
+		}
+
+		.back {
+			position: absolute;
+			top: 200px;
+			left: 20px;
+
+			width: 15%;
+		}
+
+		.back-copy {
+			position: absolute;
+			top: 195px;
+			left: 90px;
+		}
+
+		.other {
+			font-size: 1em;
+
+		  list-style: none;
+
+			text-decoration: underline;
+			color: inherit;
+
+			position: absolute;
+			top: 100px;
+			left: 20px;
+		}
+
+		.other li, a {
+			font-size: .9em;
+
+		  list-style: none;
+
+			text-decoration: underline;
+			color: inherit;
+		}
+
+		.avail {
+			position: absolute;
+			top: 110px;
+			left: 0px;
+
+			height: 15%;
+		}
+
+		.avail-copy {
+			font-size: .85em;
+			position: absolute;
+			top: 80px;
+			left: 20px;
+
+			padding-bottom: 75px;
+		}
+
+		.underline {
+		  border-bottom-width: .05em;
+		  border-bottom-style: solid;
+		  line-height: 2em;
+		}
+
+  }
