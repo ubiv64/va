@@ -1,246 +1,278 @@
+@font-face {
+	font-family: 'Andale Mono';
+	src: url('../assets/andalemo.ttf') format('truetype');
+}
+
 html {
-  font-family: "Andale Mono";
+  font-family: 'Andale Mono';
 }
 
-canvas {
-	position: absolute;
+@media screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 8000px) {
 
-	top: -200px;
-	left: 500px;
+	canvas {
+		position: absolute;
 
-	z-index: -1;
-}
+		top: -200px;
+		left: 500px;
 
-h2 {
-	font-size: 2.3em;
+		z-index: -1;
+	}
 
-	position: absolute;
-	top: 72px;
-	left: 68px;
-}
+	.name {
+		font-size: 2.3em;
 
-h4 {
-	font-size: 2em;
+		position: absolute;
+		top: 72px;
+		left: 68px;
+	}
 
-	position: absolute;
-	top: 262px;
-	left: 68px;
+	.about {
+		font-size: 2em;
 
-	display: inline;
-  width: 520px;
-}
+		position: absolute;
+		top: 262px;
+		left: 68px;
 
-h5 {
-	font-size: .75em;
-}
+		display: inline;
+	  width: 520px;
+	}
 
-.menu {
-	font-size: 1.5em;
+	.menu {
+		font-size: 1.5em;
 
-  list-style: none;
+	  list-style: none;
 
-	position: absolute;
-	top: 630px;
-	left: 68px;
-}
+		position: absolute;
+		top: 630px;
+		left: 68px;
+	}
 
-.menu li {
-  display: inline-block;
-  
-  margin-right: 90px;
-  line-height: 2em;
-}
+	.menu li {
+	  display: inline-block;
+	  
+	  margin-right: 90px;
+	  line-height: 2em;
+	}
 
-.email {
-	font-family: "Helvetica";
-	font-size: 1em;
+	.email {
+		font-family: "Helvetica";
+		font-size: 1em;
 
-	text-decoration: none;
-	color: inherit;
+		text-decoration: none;
+		color: inherit;
 
-  position: absolute;
-  top: 1100px;
-  left: 900px;
-  height: 2.5rem;
-}
+	  position: absolute;
+	  top: 1100px;
+	  left: 900px;
 
-.front {
-	position: absolute;
-	top: 150px;
-	left: 25px;
-}
+	  padding-bottom: 100px;
+	}
 
-.front-copy {
-	position: absolute;
-	top: 140px;
-	left: 125px;
-}
+	.front {
+		position: absolute;
+		top: 150px;
+		left: 25px;
+	}
 
-.back {
-	position: absolute;
-	top: 265px;
-	left: 25px;
+	.front-copy {
+		font-size: .8em;
 
-	padding-bottom: 100px;
-}
+		position: absolute;
+		top: 145px;
+		left: 125px;
+	}
 
-.back-copy {
-	position: absolute;
-	top: 255px;
-	left: 125px;
-}
+	.back {
+		position: absolute;
+		top: 265px;
+		left: 25px;
 
-.other {
-	font-size: 1em;
+		padding-bottom: 100px;
+	}
 
-  list-style: none;
+	.back-copy {
+		font-size: .8em;
 
-	text-decoration: underline;
-	color: inherit;
+		position: absolute;
+		top: 264px;
+		left: 125px;
+	}
 
-	position: absolute;
-	top: 140px;
-	left: 20px;
-}
+	.other {
+		font-size: 1em;
 
-.other li, a {
-	font-size: 1em;
+	  list-style: none;
 
-  list-style: none;
+		text-decoration: underline;
+		color: inherit;
 
-	text-decoration: underline;
-	color: inherit;
-}
+		width: 50px;
 
-.avail {
-	position: absolute;
-	top: 180px;
-	left: 0px;
-}
+		position: absolute;
+		top: 140px;
+		left: 20px;
+	}
 
-.avail-copy {
-	font-size: 1em;
-	position: absolute;
-	top: 140px;
-	left: 45px;
+	.other li, a {
+		font-size: .95em;
 
-	padding-bottom: 75px;
-}
+	  list-style: none;
+
+		text-decoration: underline;
+		color: inherit;
+	}
+
+	.avail {
+		position: absolute;
+		top: 160px;
+		left: 0px;
+
+		height: 20%
+	}
+
+	.avail-copy {
+		font-size: .8em;
+
+		position: absolute;
+		top: 140px;
+		left: 38px;
+
+		padding-bottom: 75px;
+	}
 
 
-.underline {
-  border-bottom-width: .1em;
-  border-bottom-style: solid;
-  line-height: 2em;
+	.underline {
+	  border-bottom-width: .1em;
+	  border-bottom-style: solid;
+	  line-height: 2em;
+	}
+
 }
 
 @media screen 
   and (min-device-width: 300px) 
-  and (max-device-width: 700px) {
+  and (max-device-width: 600px) {
+  	html, body {
+  		font-family: "Andale Mono";
+		}
+
 		canvas {
 			position: absolute;
 
-			top: -100px;
-			left: -10px;
+			top: -50px;
+			left: 400px;
+
+			overflow-x: hidden;
+
+			min-width: 0;
 		}
 
-  	h2 {
-  		font-size: 1.4em;
+		.name {
+			font-size: 3.5em;
 
 			position: absolute;
-			top: 59px;
-			left: 34px;
+			top: 90px;
+			left: 100px;
+
+			width: 500px;
 		}
 
-		h4 {
-			font-size: 1.3em;
+		.about {
+			font-size: 3.2em;
 
 			position: absolute;
-			top: 180px;
-			left: 34px;
+			top: 400px;
+			left: 100px;
 
-			display: inline-block;
-		  width: 325px;
-		  height: 158px;
-		}
-
-		h5 {
-			font-size: .75em;
+			display: inline;
+		  width: 720px;
 		}
 
 		.menu {
-			font-size: 1.2em;
+			font-size: 2.75em;
 
 		  list-style: none;
 
+		  width: 800px;
+
 			position: absolute;
-			top: 425px;
-			left: 34px;
+			top: 950px;
+			left: 100px;
 		}
 
 		.menu li {
 		  display: inline-block;
 		  
-		  margin-right: 75px;
+		  margin-right: 160px;
 		  line-height: 2em;
 		}
 
 		.email {
 			font-family: "Helvetica";
-			font-size: .8em;
+			font-size: 2em;
 
 			text-decoration: none;
 			color: inherit;
 
 		  position: absolute;
-		  top: 770px;
-		  left: 300px;
-		  height: 2.5rem;
+		  top: 1800px;
+		  left: 700px;
+
+		  padding-bottom: 50px;
 		}
 
 		.front {
 			position: absolute;
-			top: 100px;
-			left: 20px;
+			top: 270px;
+			left: 65px;
 
-			width: 15%;
+			width: 12%;
 		}
 
 		.front-copy {
+			font-size: .8em;
+
 			position: absolute;
-			top: 95px;
-			left: 90px;
+			top: 270px;
+			left: 230px;
 		}
 
 		.back {
 			position: absolute;
-			top: 200px;
-			left: 20px;
+			top: 500px;
+			left: 65px;
 
-			width: 15%;
+			padding-bottom: 500px;
+
+			width: 12%;
 		}
 
 		.back-copy {
+			font-size: .8em;
+
 			position: absolute;
-			top: 195px;
-			left: 90px;
+			top: 500px;
+			left: 230px;
 		}
 
 		.other {
-			font-size: 1em;
+			font-size: .9em;
 
 		  list-style: none;
 
 			text-decoration: underline;
 			color: inherit;
 
+			width: 200px;
+
 			position: absolute;
-			top: 100px;
-			left: 20px;
+			top: 240px;
+			left: 65px;
 		}
 
 		.other li, a {
-			font-size: .9em;
 
 		  list-style: none;
 
@@ -250,19 +282,19 @@ h5 {
 
 		.avail {
 			position: absolute;
-			top: 110px;
+			top: 260px;
 			left: 0px;
 
-			height: 15%;
+			height: 21%;
 		}
 
 		.avail-copy {
-			font-size: .85em;
+			font-size: 1em;
 			position: absolute;
-			top: 80px;
-			left: 20px;
+			top: 215px;
+			left: 64px;
 
-			padding-bottom: 75px;
+			padding-bottom: 500px;
 		}
 
 		.underline {
