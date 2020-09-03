@@ -1,48 +1,47 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-dom";
+import React, { useState } from 'react';
 
-import RecentsGrid from './RecentsGrid.js'
+function Menu(props) {
 
-import '../styles/Menu.css'
+	const [sub, setSub] = useState("tools")
 
-class Menu extends Component {
-  constructor(props){
-    super(props)
-  }
+	function handleLink(linkType) {
+		setSub(linkType)
+	}
 
-  render() {
+	const availability =
+		<div className="avail">
+			<img src={require(`../assets/avail.svg`)} />
+			<p> Available </p>  
+		</div>
 
-    return (
-      <Router>
-          <div className="nav">
-          <NavLink exact to="/" activeClassName="active" className="inactive">recents</NavLink>
-          <NavLink exact to="/work" activeClassName="active" className="inactive">work</NavLink>
-          <NavLink exact to="/contact" activeClassName="active" className="inactive">contact</NavLink>
-          </div>
-          <Switch>
-            <Route exact path="/">
-              <RecentsGrid random={this.props.menu.random} />
-            </Route>
-            <Route exact path="/work">
-              <div className="work">
-              {this.props.menu.work}
-              </div>
-            </Route>
-            <Route exact path="/contact">
-              <div className="contact">
-              {this.props.menu.contact}
-              </div>
-            </Route>
-          </Switch>
-      </Router>
-    );
-  }
+	const tools = 
+		<div>
+			<img className="front" src={require(`../assets/${"front".concat(props.object.link)}.svg`)} />
+				<p className="front-copy"> React, ES6 </p>
+      <img className="back" src={require(`../assets/${"back".concat(props.object.link)}.svg`)} />
+      	<p className="back-copy"> Scala, Python, Go </p>
+		</div>
+
+	const other =
+		<nav className="other">
+			<li><a href="https://github.com/ubiv64">GitHub</a></li>
+			<li><a href="https://www.are.na/vibu-a">Are.na</a></li>
+			{availability}
+		</nav>
+
+
+	const menu =
+    <nav className="menu">
+      <li className={(sub === "tools") ? "underline" : null} onClick={() => setSub("tools")}> tools </li>
+      <li className={(sub === "other") ? "underline" : null} onClick={() => setSub("other")}> other </li>
+      	{(sub === "tools") ? tools : other}
+    </nav>
+
+  return(
+  	<div>
+  		{menu}
+  	</div>
+  )  
 }
 
 export default Menu
-
-// <Route exact path="/contact">
-//   <div className="contact">
-//   {this.props.menu.contact}
-//   </div>
-// </Route>  

@@ -1,62 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Menu from './Menu';
+import Theme from './Theme.js';
+
+// import Menu from './Menu.js'
 
 import '../styles/Main.css';
 
-class Main extends Component {
+function Main() {
 
-  random() {
-    let random = new Array(12).fill(null).map(() =>
-      Math.floor(Math.random() * Math.floor(179))
-    )
+  return(
+    <div>
+      <p className="name"> Vibu Anbarasan </p>
+      <p className="about"> full stack dev with experience in writing service-oriented APIs and serverless frontend web applications. </p>
+      <Theme />
+    </div>
+  )
 
-    let finalRandom = new Set(random)
-
-    return finalRandom.size !== random.length ? this.random() : random
-  }
-
-  render() {
-
-    const work = 
-      <div>
-        <p> 
-        vibu anbarasan
-        </p>
-        <p> 
-        <a href="https://github.com/ubiv64">software engineer</a>
-        </p>
-        <p> 
-        based out of Dallas, TX
-        </p>
-      </div>
-
-    const contact = 
-      <div>
-        <p> 
-        vibu anbarasan
-        </p>
-        <p> 
-        <a href="mailto:vibu@live.com">email</a>
-        </p>
-      </div>
-
-    const menu = {
-      random: this.random(),
-      work: work,
-      contact: contact
-    }
-
-    return (
-      <div>
-      <div className="header">
-      </div>
-        <div className="menu">
-          <Menu menu={menu} />
-        </div>
-      </div>
-    );
-  }
 }
 
 export default Main
+
+// <li><a clasName="email" href="mailto:vibu.anbarasan.64@gmail.com">Email</a></li>

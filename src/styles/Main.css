@@ -1,16 +1,310 @@
-html {
-  background-color: black;
-
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-
-
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  text-rendering: optimizeLegibility;
+@font-face {
+	font-family: 'Andale Mono';
+	src: url('../assets/andalemo.ttf') format('truetype');
 }
 
-a {
-	-webkit-text-fill-color: #4C7DEE;
-}			
+html {
+  font-family: 'Andale Mono';
+}
+
+@media screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 8000px) {
+
+	canvas {
+		position: absolute;
+
+		top: -200px;
+		left: 500px;
+
+		z-index: -1;
+	}
+
+	.name {
+		font-size: 2.3em;
+
+		position: absolute;
+		top: 72px;
+		left: 68px;
+	}
+
+	.about {
+		font-size: 2em;
+
+		position: absolute;
+		top: 262px;
+		left: 68px;
+
+		display: inline;
+	  width: 520px;
+	}
+
+	.menu {
+		font-size: 1.5em;
+
+	  list-style: none;
+
+		position: absolute;
+		top: 630px;
+		left: 68px;
+	}
+
+	.menu li {
+	  display: inline-block;
+	  
+	  margin-right: 90px;
+	  line-height: 2em;
+	}
+
+	.email {
+		font-family: "Helvetica";
+		font-size: 1em;
+
+		text-decoration: none;
+		color: inherit;
+
+	  position: absolute;
+	  top: 1100px;
+	  left: 900px;
+
+	  padding-bottom: 100px;
+	}
+
+	.front {
+		position: absolute;
+		top: 150px;
+		left: 25px;
+	}
+
+	.front-copy {
+		font-size: .8em;
+
+		position: absolute;
+		top: 148px;
+		left: 125px;
+	}
+
+	.back {
+		position: absolute;
+		top: 265px;
+		left: 25px;
+
+		padding-bottom: 100px;
+	}
+
+	.back-copy {
+		font-size: .8em;
+
+		position: absolute;
+		top: 264px;
+		left: 125px;
+	}
+
+	.other {
+		font-size: 1em;
+
+	  list-style: none;
+
+		text-decoration: underline;
+		color: inherit;
+
+		width: 50px;
+
+		position: absolute;
+		top: 140px;
+		left: 20px;
+	}
+
+	.other li, a {
+		font-size: .95em;
+
+	  list-style: none;
+
+		text-decoration: underline;
+		color: inherit;
+	}
+
+	.avail {
+		font-size: .95em;
+
+		width: 200px;
+
+		position: absolute;
+		top: 140px;
+		left: 0px;
+	}
+
+	.avail > p {
+		display: inline-block;
+
+		margin-left: 20px;
+	}
+
+	.avail > img {
+		height: 18px;
+	}
+
+	.underline {
+	  border-bottom-width: .1em;
+	  border-bottom-style: solid;
+	  line-height: 2em;
+	}
+
+}
+
+@media screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 600px) {
+  	html, body {
+  		font-family: "Andale Mono";
+		}
+
+		canvas {
+			position: absolute;
+
+			top: -50px;
+			left: 400px;
+
+			overflow-x: hidden;
+
+			min-width: 0;
+		}
+
+		.name {
+			font-size: 3.5em;
+
+			position: absolute;
+			top: 90px;
+			left: 100px;
+
+			width: 500px;
+		}
+
+		.about {
+			font-size: 3.2em;
+
+			position: absolute;
+			top: 400px;
+			left: 100px;
+
+			display: inline;
+		  width: 720px;
+		}
+
+		.menu {
+			font-size: 2.75em;
+
+		  list-style: none;
+
+		  width: 800px;
+
+			position: absolute;
+			top: 950px;
+			left: 100px;
+		}
+
+		.menu li {
+		  display: inline-block;
+		  
+		  margin-right: 160px;
+		  line-height: 2em;
+		}
+
+		.email {
+			font-family: "Helvetica";
+			font-size: 2em;
+
+			text-decoration: none;
+			color: inherit;
+
+		  position: absolute;
+		  top: 1800px;
+		  left: 700px;
+
+		  padding-bottom: 50px;
+		}
+
+		.front {
+			position: absolute;
+			top: 270px;
+			left: 65px;
+
+			width: 12%;
+		}
+
+		.front-copy {
+			font-size: .8em;
+
+			position: absolute;
+			top: 270px;
+			left: 230px;
+		}
+
+		.back {
+			position: absolute;
+			top: 500px;
+			left: 65px;
+
+			padding-bottom: 500px;
+
+			width: 12%;
+		}
+
+		.back-copy {
+			font-size: .8em;
+
+			position: absolute;
+			top: 500px;
+			left: 230px;
+		}
+
+		.other {
+			font-size: .9em;
+
+		  list-style: none;
+
+			text-decoration: underline;
+			color: inherit;
+
+			width: 200px;
+
+			position: absolute;
+			top: 240px;
+			left: 65px;
+		}
+
+		.other li, a {
+
+		  list-style: none;
+
+			text-decoration: underline;
+			color: inherit;
+		}
+
+		.avail {
+			font-size: .95em;
+
+			width: 500px;
+
+			position: absolute;
+			top: 235px;
+			left: 0px;
+		}
+
+		.avail > p {
+			display: inline-block;
+
+			margin-left: 25px;
+		}
+
+		.avail > img {
+			height: 30px;
+		}
+
+		.underline {
+		  border-bottom-width: .05em;
+		  border-bottom-style: solid;
+		  line-height: 2em;
+		}
+
+  }
