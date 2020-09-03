@@ -80,7 +80,7 @@ html {
 		font-size: .8em;
 
 		position: absolute;
-		top: 145px;
+		top: 148px;
 		left: 125px;
 	}
 
@@ -125,23 +125,24 @@ html {
 	}
 
 	.avail {
-		position: absolute;
-		top: 160px;
-		left: 0px;
+		font-size: .95em;
 
-		height: 20%
-	}
-
-	.avail-copy {
-		font-size: .8em;
+		width: 200px;
 
 		position: absolute;
 		top: 140px;
-		left: 38px;
-
-		padding-bottom: 75px;
+		left: 0px;
 	}
 
+	.avail > p {
+		display: inline-block;
+
+		margin-left: 20px;
+	}
+
+	.avail > img {
+		height: 18px;
+	}
 
 	.underline {
 	  border-bottom-width: .1em;
@@ -281,20 +282,23 @@ html {
 		}
 
 		.avail {
-			position: absolute;
-			top: 260px;
-			left: 0px;
+			font-size: .95em;
 
-			height: 21%;
+			width: 500px;
+
+			position: absolute;
+			top: 235px;
+			left: 0px;
 		}
 
-		.avail-copy {
-			font-size: 1em;
-			position: absolute;
-			top: 215px;
-			left: 64px;
+		.avail > p {
+			display: inline-block;
 
-			padding-bottom: 500px;
+			margin-left: 25px;
+		}
+
+		.avail > img {
+			height: 30px;
 		}
 
 		.underline {
