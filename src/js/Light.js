@@ -47,14 +47,14 @@ function Light(props) {
   World.add(world, Constraint.create({
     pointA: { x: props.object.rectangle.pointAX, y: -10 },
     bodyB: light,
-    pointB: { x: 0, y: -32 },
+    pointB: { x: 0, y: props.object.rectangle.pointBY },
     stiffness: 1,
     damping: 0.05,
     render : {
     	strokeStyle: props.object.stroke,
     	type: "line",
     	anchors: false,
-    	lineWidth: 4
+    	lineWidth: props.object.lineWidth
     },
     type: "line"
   }));
@@ -86,6 +86,12 @@ function Light(props) {
   		props.object.lightSwitch()
   	}
   })
+
+  if (props.object.mobile) {
+    light.render.sprite.xScale = light.render.sprite.xScale * 2.75;
+    light.render.sprite.yScale = light.render.sprite.yScale * 2.75;
+    Body.scale(light, 2.75, 2.75)
+  }
     
 	return(
 		<div>

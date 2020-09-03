@@ -11,9 +11,9 @@ function Menu(props) {
 	const tools = 
 		<div>
 			<img className="front" src={require(`../assets/${"front".concat(props.object.link)}.svg`)} />
-				<h5 className="front-copy"> React, ES6 </h5>
+				<p className="front-copy"> React, ES6 </p>
       <img className="back" src={require(`../assets/${"back".concat(props.object.link)}.svg`)} />
-      	<h5 className="back-copy"> Scala, Python, Go </h5>
+      	<p className="back-copy"> Scala, Python, Go </p>
 		</div>
 
 	const other =
@@ -21,7 +21,7 @@ function Menu(props) {
 			<li><a href="https://github.com/ubiv64">GitHub</a></li>
 			<li><a href="https://www.are.na/vibu-a">Arena</a></li>
 			<img className="avail" src={require(`../assets/avail.svg`)} />
-			<h5 className="avail-copy"> Available </h5>  
+			<p className="avail-copy"> Available </p>  
 		</nav>
 
 
@@ -30,7 +30,6 @@ function Menu(props) {
       <li className={(sub === "tools") ? "underline" : null} onClick={() => setSub("tools")}> tools </li>
       <li className={(sub === "other") ? "underline" : null} onClick={() => setSub("other")}> other </li>
       	{(sub === "tools") ? tools : other}
-      <p> </p>
     </nav>
 
   return(
