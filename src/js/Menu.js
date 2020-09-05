@@ -8,12 +8,6 @@ function Menu(props) {
 		setSub(linkType)
 	}
 
-	const availability =
-		<div className="avail">
-			<img src={require(`../assets/avail.svg`)} />
-			<p> Available </p>  
-		</div>
-
 	const tools = 
 		<div>
 			<img className="front" src={require(`../assets/${"front".concat(props.object.link)}.svg`)} />
@@ -26,7 +20,6 @@ function Menu(props) {
 		<nav className="other">
 			<li><a href="https://github.com/ubiv64">GitHub</a></li>
 			<li><a href="https://www.are.na/vibu-a">Are.na</a></li>
-			{availability}
 		</nav>
 
 

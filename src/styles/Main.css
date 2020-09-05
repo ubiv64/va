@@ -124,26 +124,6 @@ html {
 		color: inherit;
 	}
 
-	.avail {
-		font-size: .95em;
-
-		width: 200px;
-
-		position: absolute;
-		top: 140px;
-		left: 0px;
-	}
-
-	.avail > p {
-		display: inline-block;
-
-		margin-left: 20px;
-	}
-
-	.avail > img {
-		height: 18px;
-	}
-
 	.underline {
 	  border-bottom-width: .1em;
 	  border-bottom-style: solid;
@@ -153,7 +133,7 @@ html {
 }
 
 @media screen 
-  and (min-device-width: 300px) 
+  and (min-device-width: 280px) 
   and (max-device-width: 600px) {
   	html, body {
   		font-family: "Andale Mono";
@@ -279,26 +259,6 @@ html {
 
 			text-decoration: underline;
 			color: inherit;
-		}
-
-		.avail {
-			font-size: .95em;
-
-			width: 500px;
-
-			position: absolute;
-			top: 235px;
-			left: 0px;
-		}
-
-		.avail > p {
-			display: inline-block;
-
-			margin-left: 25px;
-		}
-
-		.avail > img {
-			height: 30px;
 		}
 
 		.underline {
