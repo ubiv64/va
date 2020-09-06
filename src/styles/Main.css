@@ -67,7 +67,7 @@ html {
 	  top: 1100px;
 	  left: 900px;
 
-	  padding-bottom: 100px;
+	  padding-bottom: 59px;
 	}
 
 	.front {
@@ -88,8 +88,6 @@ html {
 		position: absolute;
 		top: 265px;
 		left: 25px;
-
-		padding-bottom: 100px;
 	}
 
 	.back-copy {
@@ -224,8 +222,6 @@ html {
 			position: absolute;
 			top: 500px;
 			left: 65px;
-
-			padding-bottom: 500px;
 
 			width: 12%;
 		}
