@@ -16,8 +16,6 @@ html {
 
 		top: -200px;
 		left: 500px;
-
-		z-index: -1;
 	}
 
 	.name {
@@ -133,10 +131,6 @@ html {
 @media screen 
   and (min-device-width: 280px) 
   and (max-device-width: 600px) {
-  	html, body {
-  		font-family: "Andale Mono";
-		}
-
 		canvas {
 			position: absolute;
 

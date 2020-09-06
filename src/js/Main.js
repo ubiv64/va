@@ -2,8 +2,6 @@ import React from 'react';
 
 import Theme from './Theme.js';
 
-// import Menu from './Menu.js'
-
 import '../styles/Main.css';
 
 function Main() {
@@ -19,5 +17,3 @@ function Main() {
 }
 
 export default Main
-
-// <li><a clasName="email" href="mailto:vibu.anbarasan.64@gmail.com">Email</a></li>

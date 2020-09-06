@@ -4,10 +4,6 @@ function Menu(props) {
 
 	const [sub, setSub] = useState("tools")
 
-	function handleLink(linkType) {
-		setSub(linkType)
-	}
-
 	const tools = 
 		<div>
 			<img className="front" src={require(`../assets/${"front".concat(props.object.link)}.svg`)} />

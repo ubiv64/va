@@ -9,7 +9,7 @@ function Theme() {
 
 	if (bulb) {
 		document.body.style.backgroundColor = "#000000"
-		document.body.style.color = "#FFFFFF" //maybe C6C3C3?
+		document.body.style.color = "#FFFFFF"
 	} else {
 		document.body.style.backgroundColor = "#FBF2E9"
 		document.body.style.color = "#000000"
