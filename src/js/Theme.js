@@ -38,7 +38,7 @@ function Theme() {
 		<div>
 			<Light object={lightObject} />
 			<Menu object={menuObject}/>
-			<a className="email" href="mailto:vibu.anbarasan.64@gmail.com">Email</a>
+			<a className="email" href="mailto:vibu.anbarasan@gmail.com">Email</a>
 		</div>
 	)
 }
