@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import { 
 	Engine, 
@@ -10,7 +10,7 @@ import {
 	MouseConstraint, 
 	Mouse, 
 	Runner, 
-	Events } from 'matter-js'
+	Events } from 'matter-js';
 
 function Light(props) {
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 import Light from './Light.js';
 import Menu from './Menu.js';
@@ -37,7 +37,7 @@ function Theme() {
 	return(
 		<div>
 			<Light object={lightObject} />
-			<Menu object={menuObject}/>
+			<Menu object={menuObject} />
 			<a className="email" href="mailto:vibu.anbarasan@gmail.com">Email</a>
 		</div>
 	)
