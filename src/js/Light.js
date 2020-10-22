@@ -34,7 +34,7 @@ function Light(props) {
   Runner.run(runner, engine);
 
   var light = Bodies.rectangle(props.object.rectangle.x, props.object.rectangle.y, 20, 40, 
-  	{ density: 0.05, 
+  	{ density: 0.1, 
   		frictionAir: 0.005,
   		render: {
   			sprite: {
@@ -78,13 +78,13 @@ function Light(props) {
 
   Render.lookAt(render, {
       min: { x: 0, y: 0 },
-      max: { x: 500, y: 500 }
+      max: { x: 800, y: 800 }
   });
   
   //scaling objects for 500/500 canvas
-  light.render.sprite.xScale = light.render.sprite.xScale * 1.02;
-  light.render.sprite.yScale = light.render.sprite.yScale * 1.02;
-  Body.scale(light, 1.02, 1.02)
+  light.render.sprite.xScale = light.render.sprite.xScale * 1.5;
+  light.render.sprite.yScale = light.render.sprite.yScale * 1.5;
+  Body.scale(light, 1.5, 1.5)
 
   Events.on(mouseConstraint, 'mousedown', (e) => {
   	if (e.source.body) {
@@ -93,9 +93,9 @@ function Light(props) {
   })
 
   if (props.object.mobile) {
-    light.render.sprite.xScale = light.render.sprite.xScale * 2.75;
-    light.render.sprite.yScale = light.render.sprite.yScale * 2.75;
-    Body.scale(light, 2.75, 2.75)
+    light.render.sprite.xScale = light.render.sprite.xScale * 1.85;
+    light.render.sprite.yScale = light.render.sprite.yScale * 1.85;
+    Body.scale(light, 1.85, 1.85)
   }
     
 	return(

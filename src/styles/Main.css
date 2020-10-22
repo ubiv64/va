@@ -15,7 +15,7 @@ html {
 		position: absolute;
 
 		top: -200px;
-	  left: 700px;
+		left: 580px;
 	}
 
 	.name {
@@ -62,8 +62,8 @@ html {
 		color: inherit;
 
 	  position: absolute;
-	  top: 1200px;
-	  left: 900px;
+	  top: 1180px;
+	  left: 820px;
 
 	  padding-bottom: 59px;
 	}
@@ -106,7 +106,7 @@ html {
 		font-size: .8em;
 
 		position: absolute;
-		top: 374px;
+		top: 372px;
 		left: 125px;
 	}
 
@@ -148,10 +148,8 @@ html {
 		canvas {
 			position: absolute;
 
-			top: -50px;
+			top: -70px;
 			left: 400px;
-
-			overflow-x: hidden;
 
 			min-width: 0;
 		}
