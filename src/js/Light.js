@@ -45,7 +45,7 @@ function Light(props) {
 
   World.add(world, light)
   World.add(world, Constraint.create({
-    pointA: { x: props.object.rectangle.pointAX, y: -10 },
+    pointA: { x: props.object.rectangle.pointAX, y: 100},
     bodyB: light,
     pointB: { x: 0, y: props.object.rectangle.pointBY },
     stiffness: 1,
@@ -78,8 +78,13 @@ function Light(props) {
 
   Render.lookAt(render, {
       min: { x: 0, y: 0 },
-      max: { x: 800, y: 800 }
+      max: { x: 500, y: 500 }
   });
+  
+  //scaling objects for 500/500 canvas
+  light.render.sprite.xScale = light.render.sprite.xScale * 1.02;
+  light.render.sprite.yScale = light.render.sprite.yScale * 1.02;
+  Body.scale(light, 1.02, 1.02)
 
   Events.on(mouseConstraint, 'mousedown', (e) => {
   	if (e.source.body) {

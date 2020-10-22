@@ -24,8 +24,8 @@ function Theme() {
 		stroke: (!bulb) ? "black" : "white", 
 		link: (!bulb) ? "" : "Lit",
 		lineWidth: (window.innerWidth < 950) ? 10 : 4,
-		rectangle: (window.innerWidth < 950) ?  { x: 570, y: 400, pointAX: 600, pointBY: -86 } : { x: 400, y: 300, pointAX: 430, pointBY: -32 },
-		canvasSize: (window.innerWidth < 950) ? 500 : 800,
+		rectangle: (window.innerWidth < 950) ?  { x: 570, y: 400, pointAX: 600, pointBY: -86 } : { x: 200, y: 300, pointAX: 230, pointBY: -32 },
+		canvasSize: 500,
 		mobile: (window.innerWidth < 950) ? true : false,
 		lightSwitch: lightSwitch
 	}

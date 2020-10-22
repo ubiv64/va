@@ -15,7 +15,7 @@ html {
 		position: absolute;
 
 		top: -200px;
-		left: 500px;
+	  left: 700px;
 	}
 
 	.name {
@@ -62,7 +62,7 @@ html {
 		color: inherit;
 
 	  position: absolute;
-	  top: 1100px;
+	  top: 1200px;
 	  left: 900px;
 
 	  padding-bottom: 59px;
@@ -70,7 +70,7 @@ html {
 
 	.front {
 		position: absolute;
-		top: 150px;
+		top: 145px;
 		left: 25px;
 	}
 
@@ -78,13 +78,13 @@ html {
 		font-size: .8em;
 
 		position: absolute;
-		top: 148px;
+		top: 144px;
 		left: 125px;
 	}
 
 	.back {
 		position: absolute;
-		top: 265px;
+		top: 260px;
 		left: 25px;
 	}
 
@@ -92,7 +92,21 @@ html {
 		font-size: .8em;
 
 		position: absolute;
-		top: 264px;
+		top: 259px;
+		left: 125px;
+	}
+
+	.design {
+		position: absolute;
+		top: 375px;
+		left: 25px;
+	}
+
+	.design-copy {
+		font-size: .8em;
+
+		position: absolute;
+		top: 374px;
 		left: 125px;
 	}
 
@@ -198,7 +212,7 @@ html {
 
 		.front {
 			position: absolute;
-			top: 270px;
+			top: 230px;
 			left: 65px;
 
 			width: 12%;
@@ -208,13 +222,13 @@ html {
 			font-size: .8em;
 
 			position: absolute;
-			top: 270px;
+			top: 230px;
 			left: 230px;
 		}
 
 		.back {
 			position: absolute;
-			top: 500px;
+			top: 440px;
 			left: 65px;
 
 			width: 12%;
@@ -224,7 +238,23 @@ html {
 			font-size: .8em;
 
 			position: absolute;
-			top: 500px;
+			top: 440px;
+			left: 230px;
+		}
+
+		.design {
+			position: absolute;
+			top: 640px;
+			left: 65px;
+
+			width: 16%;
+		}
+	
+		.design-copy {
+			font-size: .8em;
+	
+			position: absolute;
+			top: 640px;
 			left: 230px;
 		}
 
