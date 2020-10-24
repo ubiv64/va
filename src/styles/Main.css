@@ -213,11 +213,11 @@ html {
 			top: 230px;
 			left: 65px;
 
-			width: 12%;
+			width: 11%;
 		}
 
 		.front-copy {
-			font-size: .8em;
+			font-size: .75em;
 
 			position: absolute;
 			top: 230px;
@@ -229,11 +229,11 @@ html {
 			top: 440px;
 			left: 65px;
 
-			width: 12%;
+			width: 11%;
 		}
 
 		.back-copy {
-			font-size: .8em;
+			font-size: .75em;
 
 			position: absolute;
 			top: 440px;
@@ -245,11 +245,11 @@ html {
 			top: 640px;
 			left: 65px;
 
-			width: 16%;
+			width: 15%;
 		}
 	
 		.design-copy {
-			font-size: .8em;
+			font-size: .75em;
 	
 			position: absolute;
 			top: 640px;
