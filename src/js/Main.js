@@ -13,7 +13,6 @@ function Main() {
       <Theme />
     </div>
   )
-
 }
 
 export default Main
