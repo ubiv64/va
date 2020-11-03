@@ -9,7 +9,7 @@ function Main() {
   return(
     <div>
       <p className="name"> Vibu Anbarasan </p>
-      <p className="about"> full stack dev with experience in writing service-oriented APIs and serverless frontend web applications. </p>
+      <p className="about"> full stack dev versed in design, writing single-page apps and service-oriented APIs. </p>
       <Theme />
     </div>
   )
