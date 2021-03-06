@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="47px" viewBox="0 0 113 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="va_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop_dark_2.2" transform="translate(-75.000000, -465.000000)">
+            <g id="Group" transform="translate(75.000000, 465.000000)">
+                <path d="M105,0 C109.418278,-8.11624501e-16 113,3.581722 113,8 L113,39 C113,43.418278 109.418278,47 105,47 L8,47 C3.581722,47 5.41083001e-16,43.418278 0,39 L0,8 C-5.41083001e-16,3.581722 3.581722,2.58798134e-15 8,0 L105,0 Z M16,19 C13.2385763,19 11,21.2385763 11,24 C11,26.7614237 13.2385763,29 16,29 C18.7614237,29 21,26.7614237 21,24 C21,21.2385763 18.7614237,19 16,19 Z" id="Combined-Shape" fill="#00B62F"></path>
+                <text id="NYC" font-family="ArialMT, Arial" font-size="36" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="29" y="36">NYC</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -30,11 +30,22 @@ html {
 		font-size: 2em;
 
 		position: absolute;
-		top: 262px;
+		top: 240px;
 		left: 68px;
 
 		display: inline;
 	  width: 520px;
+	}
+
+	.tags {
+		font-size: 1.8em;
+
+		position: absolute;
+		top: 460px;
+		left: 68px;
+
+		display: inline;
+	  width: 75px;
 	}
 
 	.menu {
@@ -165,16 +176,26 @@ html {
 		}
 
 		.about {
-			font-size: 3.2em;
+			font-size: 3.1em;
 
 			position: absolute;
-			top: 400px;
+			top: 350px;
 			left: 100px;
 
 			display: inline;
 		  width: 720px;
 		}
 
+		.tags {
+
+			position: absolute;
+			top: 700px;
+			left: 100px;
+
+			display: inline;
+		  width: 125px;
+		}
+		
 		.menu {
 			font-size: 2.75em;
 
@@ -247,7 +268,7 @@ html {
 
 			width: 15%;
 		}
-	
+		
 		.design-copy {
 			font-size: .75em;
 	
