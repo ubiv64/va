@@ -11,7 +11,7 @@ function Menu(props) {
       <img className="back" src={require(`../assets/${"back".concat(props.object.link)}.svg`)} />
       	<p className="back-copy"> Scala, Python, Go </p>
 			<img className="design" src={require(`../assets/${"des".concat(props.object.link)}.svg`)} />
-      	<p className="design-copy"> Sketch </p>
+				<p className="design-copy"> Sketch, (some)CAD </p>
 		</div>
 
 	const other =

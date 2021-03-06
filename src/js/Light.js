@@ -41,11 +41,11 @@ function Light(props) {
   				texture: require(`../assets/${"bulb".concat(props.object.link)}.svg`)
   			}
   		}
-  	});
+  	})
 
   World.add(world, light)
   World.add(world, Constraint.create({
-    pointA: { x: props.object.rectangle.pointAX, y: 100},
+    pointA: { x: props.object.rectangle.pointAX, y: (window.innerWidth < 950) ? 0 : 100},
     bodyB: light,
     pointB: { x: 0, y: props.object.rectangle.pointBY },
     stiffness: 1,
@@ -57,18 +57,18 @@ function Light(props) {
     	lineWidth: props.object.lineWidth
     },
     type: "line"
-  }));
+  }))
 
   var mouse = Mouse.create(render.canvas),
       mouseConstraint = MouseConstraint.create(engine, {
           mouse: mouse,
           constraint: {
-              stiffness: 0.2,
+              stiffness: 0.05,
               render: {
                   visible: false
               }
           }
-      });
+      })
 
   mouse.pixelRatio = 1
 
@@ -79,7 +79,7 @@ function Light(props) {
   Render.lookAt(render, {
       min: { x: 0, y: 0 },
       max: { x: 800, y: 800 }
-  });
+  })
   
   //scaling objects for 500/500 canvas
   light.render.sprite.xScale = light.render.sprite.xScale * 1.5;
