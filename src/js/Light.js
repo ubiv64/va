@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import { 
 	Engine, 
@@ -10,28 +10,30 @@ import {
 	MouseConstraint, 
 	Mouse, 
 	Runner, 
-	Events } from 'matter-js';
+	Events 
+} from 'matter-js'
 
 function Light(props) {
 
-  var engine = Engine.create(),
-      world = engine.world;
+  var engine = 
+    Engine.create(), 
+    world = engine.world
 
   var render = Render.create({
-  		id: "bulb",
-      element: document.body,
-      engine: engine,
-      options: {
-          width: props.object.canvasSize,
-          height: props.object.canvasSize,
-          background: "transparent",
-          wireframes: false,
-          pixelRatio: window.devicePixelRatio
-      }
-  });
+    id: "bulb",
+    element: document.body,
+    engine: engine,
+    options: {
+        width: props.object.canvasSize,
+        height: props.object.canvasSize,
+        background: "transparent",
+        wireframes: false,
+        pixelRatio: window.devicePixelRatio
+    }
+  })
 
-  var runner = Runner.create();
-  Runner.run(runner, engine);
+  var runner = Runner.create()
+  Runner.run(runner, engine)
 
   var light = Bodies.rectangle(props.object.rectangle.x, props.object.rectangle.y, 20, 40, 
   	{ density: 0.1, 
@@ -59,22 +61,23 @@ function Light(props) {
     type: "line"
   }))
 
-  var mouse = Mouse.create(render.canvas),
-      mouseConstraint = MouseConstraint.create(engine, {
-          mouse: mouse,
-          constraint: {
-              stiffness: 0.05,
-              render: {
-                  visible: false
-              }
-          }
-      })
+  var mouse = 
+    Mouse.create(render.canvas),
+    mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+            stiffness: 0.05,
+            render: {
+                visible: false
+            }
+        }
+    })
 
   mouse.pixelRatio = 1
 
-  World.add(world, mouseConstraint);
+  World.add(world, mouseConstraint)
 
-  render.mouse = mouse;
+  render.mouse = mouse
 
   Render.lookAt(render, {
       min: { x: 0, y: 0 },
