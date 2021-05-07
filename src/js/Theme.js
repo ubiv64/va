@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import Light from './Light.js';
-import Menu from './Menu.js';
+import Light from './Light.js'
+import Menu from './Menu.js'
 
 function Theme() {
 
